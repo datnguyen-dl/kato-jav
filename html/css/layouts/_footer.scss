@@ -1,0 +1,32 @@
+footer {
+    position: relative;
+    color: white;
+    .ka-social-share {
+        text-align: center;
+        ul {
+            @extend %ka-ul;
+            li {
+                display: inline-block;
+                padding: 20px;
+                a {
+                    img {
+                        vertical-align: middle;
+                    }
+                    span {
+                        vertical-align: middle;
+                    }
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: $orange;
+        }
+    }
+}

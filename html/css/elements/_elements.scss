@@ -1,0 +1,163 @@
+$size-icon1:32px;
+$size-icon2:24px;
+$size-icon3:18px;
+$size-icon4:16px;
+$size-icon5:14px;
+$size-icon6:12px;
+%ka-fsRob {
+  font-family: 'Roboto', sans-serif; //font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.ka-fsRob {
+  @extend %ka-fsRob;
+}
+
+//float
+.ka-fLeft {
+  float: left;
+}
+
+.ka-fRight {
+  float: right;
+}
+
+//cursor
+.ka-cp {
+  cursor: pointer;
+}
+
+.ka-noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  moz-user-select: none;
+  ms-user-select: none;
+  user-select: none;
+}
+
+//FORMAT===================================
+//format ul li
+%ka-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &.ka-list-circle-el {
+    list-style-type: circle;
+    margin-left: 16px;
+  }
+}
+
+.format-UL,
+.ka-ul {
+  @extend %ka-ul;
+}
+
+//DIVISION=======================
+%ka-clear {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  width: 100%;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+//BOXSHADOW=========
+.ka-shadow {
+  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+//ELLIPSIS===========================
+%ka-ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ka-ell {
+  @extend %ka-ell;
+}
+
+//WIDTH==================
+.ka-w100p {
+  width: 100%;
+}
+
+.ka-w100vw {
+  width: 100vw;
+}
+
+//HEIGHT==================
+.ka-h100p {
+  height: 100%;
+}
+
+.ka-h100vh {
+  height: 100vh;
+}
+
+.ka-avoidClick {
+  pointer-events: none;
+}
+
+%ka-pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ka-pos-center {
+  @extend %ka-pos-center;
+}
+
+.ka-label {
+  display: block;
+  margin-bottom: 7px;
+  color: $grey3;
+}
+
+.ks-title-dec-red,
+.ks-title-dec-white,
+.ks-title-dec-orange {
+  position: relative;
+  display: block;
+  &:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 10px;
+    -ms-transform: skew(48deg, -24deg);
+    /* IE 9 */
+    -webkit-transform: skew(48deg, -24deg);
+    /* Safari */
+    transform: skew(48deg, -24deg);
+    /* Standard syntax */
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.ks-title-dec-red {
+  &:before {
+    border: 2px solid $red;
+  }
+}
+
+.ks-title-dec-orange {
+  &:before {
+    border: 2px solid $orange;
+  }
+}
+
+.ks-title-dec-white {
+  &:before {
+    border: 2px solid white;
+  }
+}

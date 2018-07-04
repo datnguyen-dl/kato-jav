@@ -1,0 +1,60 @@
+header {
+  
+  &>nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    @extend %ka-fC;
+    @extend %ka-fAI-center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 99;
+    &>.ka-logo {
+      @extend %ka-fOne;
+      padding-left: 20px;
+      padding-right: 20px;
+      img {
+        height: 40px;
+      }
+    }
+    &>.ka-menu {
+      &>li {
+        float: left;
+        &>a {
+          padding-top: 7px;
+          padding-bottom: 7px;
+          padding-left: 20px;
+          padding-right: 20px;
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+        &>.ka-popup {
+          display: none;
+        }
+      }
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .ka-br {
+        border: 1px solid white;
+      }
+    }
+    ul {
+      @extend %ka-ul;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $orange;
+    }
+  }
+}

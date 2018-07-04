@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:100,200,300,400,700,900');
+//@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+//FONT-STYLE===========================
+%ka-fBold {
+  font-weight: bold;
+}
+
+%ka-fRegular {
+  font-weight: 300;
+}
+
+%ka-fNormal {
+  font-weight: normal;
+}
+
+%ka-fItalic {
+  font-style: italic;
+}
+
+%ka-fLight {
+  font-weight: 200;
+}
+
+%ka-fUpper {
+  text-transform: uppercase;
+}
+
+.ka-fBold {
+  @extend %ka-fBold;
+}
+
+.ka-fRegular {
+  @extend %ka-fRegular;
+}
+
+.ka-fNormal {
+  @extend %ka-fNormal;
+}
+
+.ka-fItalic {
+  @extend %ka-fItalic;
+}
+
+.ka-fLight {
+  @extend %ka-fLight;
+}
+
+.ka-fUpper {
+  @extend %ka-fUpper;
+}
+
+//HEAD======================
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  &.ka-title {
+    margin: 0;
+    padding: 0px;
+    line-height: 1.2;
+  }
+}
+
+//TEXT-ALIGN========================
+.ka-tCenter {
+  text-align: center;
+}
+
+.ka-tLeft {
+  text-align: left;
+}
+
+.ka-tRight {
+  text-align: right;
+}
+
+//VERTICAL-ALIGN=======================
+.ka-vMiddle {
+  vertical-align: middle;
+}
+
+.ka-vTop {
+  vertical-align: top;
+}
+
+.ka-vBottom {
+  vertical-align: bottom;
+}
+
+//TEXT-DECORATION====================
+.ka-tLinethrough {
+  text-decoration: line-through;
+}
+
+.ka-tUnderline {
+  text-decoration: underline;
+}
+
+.ka-tNone {
+  text-decoration: none;
+}
+
+.ka-tNowrap {
+  white-space: nowrap;
+}
+
+.ka-tBreakall {
+  word-break: break-all;
+  max-width: 100%;
+}
+
+// FONT
+.ka-fs70 {
+  font-size: 70px;
+}
+
+.ka-fs60 {
+  font-size: 60px;
+}
+
+.ka-fs36 {
+  font-size: 36px;
+}
+
+.ka-fs30 {
+  font-size: 30px;
+}
+
+.ka-fs24 {
+  font-size: 24px;
+}
+
+.ka-fs20 {
+  font-size: 20px;
+}
+
+.ka-fs18 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.ka-fs16 {
+  font-size: 16px;
+}
+
+.ka-fs14 {
+  font-size: 14px;
+}
+
+.ka-fs13 {
+  font-size: 13px;
+}
+
+.ka-fs12 {
+  font-size: 12px;
+}
+
+.ka-fs11 {
+  font-size: 11px;
+}
+
+.ka-fs10 {
+  font-size: 10px;
+}
+
+.ka-fs9 {
+  font-size: 9px;
+}
+
+.ka-fs8 {
+  font-size: 8px;
+}
+
+.ka-fs7 {
+  font-size: 7px;
+}

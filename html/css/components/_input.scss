@@ -1,0 +1,85 @@
+//format placeholder
+.format-placeholder-normal {
+  background-color: transparent;
+  &::-webkit-input-placeholder {
+    color: $grey4;
+  }
+  &::-moz-placeholder {
+    color: $grey4;
+  }
+  &:-ms-input-placeholder {
+    color: $grey4;
+  }
+  &:-moz-placeholder {
+    color: $grey4;
+  }
+  &:focus {
+    &::-webkit-input-placeholder {
+      color: $grey4;
+    }
+    &::-moz-placeholder {
+      color: $grey4;
+    }
+    &:-ms-input-placeholder {
+      color: $grey4;
+    }
+    &:-moz-placeholder {
+      color: $grey4;
+    }
+  }
+}
+
+.format-placeholder-line {
+  &::-webkit-input-placeholder {
+    color: #bfbfbf;
+  }
+  &::-moz-placeholder {
+    color: #bfbfbf;
+  }
+  &:-ms-input-placeholder {
+    color: #bfbfbf;
+  }
+  &:-moz-placeholder {
+    color: #bfbfbf;
+  }
+  &:focus {
+    &::-webkit-input-placeholder {
+      color: #a9c0b6;
+    }
+    &::-moz-placeholder {
+      color: #a9c0b6;
+    }
+    &:-ms-input-placeholder {
+      color: #a9c0b6;
+    }
+    &:-moz-placeholder {
+      color: #a9c0b6;
+    }
+  }
+}
+
+//input, textarea
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input,
+textarea {
+  -webkit-appearance: none;
+  border: 0px;
+  @extend .format-placeholder-normal;
+  display: block;
+  min-height: 43px;
+  @extend %fontGeneral;
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  &.ka-resize-none {
+    resize: none;
+  }
+}

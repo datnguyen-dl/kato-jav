@@ -1,0 +1,228 @@
+//DISPLAY FLEX================
+%ka-fC {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; // overflow: hidden;
+  -moz-align-items: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+}
+
+%ka-fC-mob {
+  @extend %ka-fC;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+%ka-fJC-center {
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+%ka-fJC-start {
+  -moz-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+}
+
+%ka-fJC-end {
+  -moz-justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+
+%ka-fJC-sBetween {
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+}
+
+%ka-fJC-sAround {
+  -moz-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+}
+
+%ka-fJC-sEvenly {
+  -moz-justify-content: space-evenly;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+}
+
+%ka-fCol {
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+%ka-fRow {
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+%ka-fAI-stretch {
+  -moz-align-items: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+}
+
+%ka-fNoWrap {
+  -moz-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-wrap: none;
+}
+
+%ka-fWrap {
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+%ka-fOne {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 0;
+}
+
+%ka-fTwo {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  min-width: 0;
+}
+
+%ka-fThree {
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  min-width: 0;
+}
+
+%ka-fAS-center {
+  -moz-align-self: center;
+  -webkit-align-self: center;
+  align-self: center;
+  -ms-align-self: center;
+}
+
+%ka-fAI-center {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-align-items: center;
+}
+
+%ka-fJC-center {
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+%ka-fAI-baseLine {
+  align-items: baseline
+}
+
+// =================================
+.ka-fC {
+  @extend %ka-fC;
+}
+
+.ka-fC-mob {
+  @extend %ka-fC-mob;
+}
+
+.ka-fJC-center {
+  @extend %ka-fJC-center;
+}
+
+.ka-fJC-start {
+  @extend %ka-fJC-start;
+}
+
+.ka-fJC-end {
+  @extend %ka-fJC-end;
+}
+
+.ka-fJC-sBetween {
+  @extend %ka-fJC-sBetween;
+}
+
+.ka-fJC-sAround {
+  @extend %ka-fJC-sAround;
+}
+
+.ka-fJC-sEvenly {
+  @extend %ka-fJC-sEvenly;
+}
+
+.ka-fCol {
+  @extend %ka-fCol;
+}
+
+.ka-fRow {
+  @extend %ka-fRow;
+}
+
+//full in container
+.ka-fAI-stretch {
+  @extend %ka-fAI-stretch;
+}
+
+.ka-fNoWrap {
+  @extend %ka-fNoWrap;
+}
+
+.ka-fWrap {
+  @extend %ka-fWrap;
+}
+
+.ka-fOne {
+  @extend %ka-fOne;
+}
+
+.ka-fTwo {
+  @extend %ka-fTwo;
+}
+
+.ka-fThree {
+  @extend %ka-fThree;
+}
+
+.ka-fAS-center {
+  @extend %ka-fAS-center;
+}
+
+.ka-fAI-center {
+  @extend %ka-fAI-center;
+}
+
+.ka-fJC-center {
+  @extend %ka-fJC-center;
+}
+
+.ka-fAI-baseLine {
+  @extend %ka-fAI-baseLine;
+}

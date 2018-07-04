@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="education">
+  <meta name="author" content="DATTANNGUYEN">
+  <title>Education</title>
+  <script src="../js/fontsize.js?v=1"></script>
+  <link rel="stylesheet" type="text/css" href="./css/index.css?v=1">
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"></link> -->
+  <!-- javascript -->
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="ka-bg-orange-elRM">
+      <div class="ka-logo">
+        <a href="index.html">
+          <img src="./img/logo/logo-white.png" />
+        </a>
+      </div>
+      <ul class="ka-menu">
+        <li>
+          <a class="ka-fC ka-fAI-center ka-br" href="#">
+            <i class="fa fa-home ka-mR10" aria-hidden="true"></i>
+            <div>English</div>
+          </a>
+          <div class="ka-popup"></div>
+        </li>
+        <li>
+          <a class="ka-fC ka-fAI-center" href="#">
+            <i class="fa fa-home ka-mR10" aria-hidden="true"></i>
+            <div class="ka-fBold" href="#">MENU</div>
+          </a>
+          <div class="ka-popup">
+            <ul class="ka-list-items">
+              <li>
+                <div>
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div>HOME</div>
+              </li>
+              <li>
+                <div>
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div>ABOUT</div>
+                <ul class="ka-list-child-items">
+                  <li>
+                    <a href="#">child item</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="ks-slider">
+      <div class="owl-carousel owl-theme">
+        <div class="item" data-videosrc="http://vpmdev.com/window.mp4">
+          <img src='//placehold.it/800x600.png' />
+          <div class="ka-title-slider">
+            <div class='ka-title'>
+              <h1 class="ks-title-dec-orange">Promo
+                <br>Title Here</h1>
+              <a href="#" class="">Watch Video</a>
+              <span> - </span>
+              <a href="#" class="">Learn More</a>
+            </div>
+          </div>
+          <i class="ka-mask"></i>
+        </div>
+        <div class="item" data-videosrc="http://vpmdev.com/window.mp4">
+          <img src='//placehold.it/800x600.png' />
+          <div class="ka-title-slider">
+            <div class='ka-title'>
+              <h1 class="ks-title-dec-orange">Promo
+                <br>Title Here</h1>
+              <a href="#" class="">Watch Video</a>
+              <span> - </span>
+              <a href="#" class="">Learn More</a>
+            </div>
+          </div>
+          <i class="ka-mask"></i>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function () {
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            items: 1,
+            touchDrag: false,
+            mouseDrag: false
+          })
+          owl.on('translate.owl.carousel', function (e) {
+            $('.owl-item video').each(function () {
+              $(this).get(0).pause();
+            });
+          });
+          owl.on('translated.owl.carousel', function (e) {
+            $('.owl-item.active video').get(0).play();
+          })
+          if (!isMobile()) {
+            $('.owl-item .item').each(function () {
+              var attr = $(this).attr('data-videosrc');
+              if (typeof attr !== typeof undefined && attr !== false) {
+                console.log('hit');
+                var videosrc = $(this).attr('data-videosrc');
+                $(this).prepend('<video muted><source src="' + videosrc + '" type="video/mp4"></video>');
+              }
+            });
+            $('.owl-item.active video').attr('autoplay', true).attr('loop', true);
+          }
+        });
+
+
+        function isMobile(width) {
+          if (width == undefined) {
+            width = 719;
+          }
+          if (window.innerWidth <= width) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      </script>
+
+    </div>
+  </header>
+  <content>
+  </content>
+  <footer>
+  </footer>
+  <i class="ka-pref"></i>
+  <i class="ka-suf"></i>
+</body>
+
+
+</html>

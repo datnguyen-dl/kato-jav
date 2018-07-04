@@ -1,0 +1,23 @@
+body {
+  position: relative;
+}
+
+.ka-pref,
+.ka-suf {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 48px;
+  height: 100%;
+  background-image: url("../img/pattern/bg_point_01.png");
+  opacity: 0.5;
+  z-index: 9;
+}
+
+.ka-pref {
+  left: 0;
+}
+
+.ka-suf {
+  right: 0;
+}

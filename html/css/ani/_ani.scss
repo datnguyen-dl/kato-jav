@@ -1,0 +1,207 @@
+%ani-all1 {
+  transition: all 0.1s ease;
+}
+
+%ani-all2 {
+  transition: all 0.2s ease;
+}
+
+%ani-all3 {
+  transition: all 0.3s ease;
+}
+
+%ani-all {
+  transition: all 0.5s ease;
+}
+
+.ani-all1 {
+  @extend %ani-all1;
+}
+
+.ani-all2 {
+  @extend %ani-all2;
+}
+
+.ani-all3 {
+  @extend %ani-all3;
+}
+
+.ani-all {
+  @extend %ani-all;
+}
+
+.animated2 {
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+
+.animated5 {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+//BOUNCEIN=======================
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.610);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(1, 1, 1);
+  }
+  20% {
+    opacity: 1;
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+  40% {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+// ani modal==========================
+@keyframes aniModal {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+.aniModal {
+  animation-name: aniModal;
+}
+
+// ani popup mini==========================
+@keyframes aniPopupBottom {
+  0% {
+    opacity: 0;
+    bottom: 6px;
+  }
+  100% {
+    opacity: 1;
+    bottom: -6px;
+  }
+}
+
+.ka-popup-bottom-el {
+  .aniPopup {
+    animation-name: aniPopupBottom;
+  }
+}
+
+@keyframes aniPopupTop {
+  0% {
+    opacity: 0;
+    top: 6px;
+  }
+  100% {
+    opacity: 1;
+    top: -6px;
+  }
+}
+
+.ka-popup-top-el {
+  .aniPopup {
+    animation-name: aniPopupTop;
+  }
+}
+
+// ==========================
+// animation loading
+.lds-ellipsis {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 13px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $green;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 0%;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 0%;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: calc(50% - 3px);
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: calc(100% - 6px);
+  animation: lds-ellipsis4 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis4 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+// @keyframes lds-ellipsis2 {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   100% {
+//     transform: translate(50%, 0);
+//   }
+// }
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(11px, 0);
+  }
+}

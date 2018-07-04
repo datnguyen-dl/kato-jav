@@ -1,0 +1,19 @@
+/*$mobile: ~"only screen and (min-device-width : 320px) and (max-device-width : 480px)";
+$ipads: ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px)";*/
+/*$mobile: ~"only screen and (min-width : 240px) and (max-width : 511px)";
+$tabletx2: ~"only screen and (min-width : 512px) and (max-width : 599px)";
+$tabletx1: ~"only screen and (min-width : 600px) and (max-width : 859px)";
+$ipads: ~"only screen and (min-width : 860px) and (max-width : 1023px)";
+$desktop: ~"only screen  and (min-width : 1024px)";
+$largeScreen: ~"only screen  and (min-width : 1824px)";
+@media $mobile {}
+
+@media $tabletx2 {}
+
+@media $tabletx1 {}
+
+@media $ipads {}
+
+@media $desktop {}
+
+@media $largeScreen {}*/

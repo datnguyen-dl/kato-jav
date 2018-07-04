@@ -1,0 +1,107 @@
+$heightSlider:100vh;
+.ks-slider {
+  background-color: $grey2;
+  min-height: $heightSlider;
+  overflow: hidden;
+  .ka-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-image: url("../img/pattern/pattern_01.gif");
+      opacity: 0.1;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: $blue;
+      opacity: 0.2;
+      z-index: 1;
+    }
+  }
+  .owl-carousel {
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item {
+          height: $heightSlider;
+          background-color: black;
+          video {
+            width: 100%;
+          }
+          .item {
+            position: relative;
+          }
+        }
+        .item-video {
+          height: $heightSlider;
+        }
+      }
+    }
+    $dot-size-slider:10px;
+    .owl-dots{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99;
+      width:$dot-size-slider;
+      right: 60px;
+      @extend %ka-fC;
+      @extend %ka-fCol;
+      .owl-dot{
+        width: $dot-size-slider;
+        height: $dot-size-slider;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        border: 1px solid white;
+        &.active{
+          background-color: white;
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.ka-title-slider {
+  @extend %ka-pos-center;
+  color: white;
+  z-index: 9;
+  margin-top: -60px;
+  max-width: 640px;
+  a {
+    color: white;
+  }
+  &>.ka-title {
+    text-align: center;
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 72px;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 76px;
+      display: block;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid $orange;
+    }
+  }
+}
