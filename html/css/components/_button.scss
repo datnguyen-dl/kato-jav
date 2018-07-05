@@ -1,0 +1,119 @@
+button {
+  @extend %fontGeneral;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.ka-scroll-btn {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 9;
+  @extend %ka-fC;
+  @extend %ka-fAI-center;
+  @extend %ka-fLight;
+  color: white;
+  &:before {
+    content: '';
+    display: block;
+    min-width: 32px;
+    min-height: 32px;
+    background-image: url(../img/icons/scroll-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.ka-sound-btn {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  z-index: 9;
+  @extend %ka-fC;
+  @extend %ka-fAI-center;
+  @extend %ka-fLight;
+  color: white;
+  &:after {
+    content: '';
+    display: block;
+    min-width: 32px;
+    min-height: 32px;
+    background-image: url(../img/icons/sound-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+%ka-btn {
+  @extend %ka-fC;
+  @extend %ka-fAI-center;
+  font-weight: bold;
+  color: #333;
+  border: 2px solid #333;
+  &>div {
+    padding: 10px 20px;
+  }
+  .ka-arrow-right {
+    padding: 10px 20px;
+    display: block;
+    min-width: 32px;
+    min-height: 32px;
+    background-image: url(../img/icons/arrow-orange-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+  }
+  &.ka-big {
+    &>div {
+      padding: 20px 30px;
+    }
+    .ka-arrow-right {
+      padding: 20px 30px;
+    }
+  }
+}
+
+.ka-orange-btn {
+  @extend %ka-btn;
+  color: $orange;
+  border-color: $orange;
+  .ka-arrow-right {
+    background-image: url(../img/icons/arrow-orange-icon.png);
+  }
+  &:hover {
+    background-color: $orange;
+    color: white;
+    .ka-arrow-right {
+      background-image: url(../img/icons/arrow-icon.png);
+    }
+  }
+}
+
+.ka-white-btn {
+  @extend %ka-btn;
+  color: white;
+  border-color: white;
+  .ka-arrow-right {
+    background-image: url(../img/icons/arrow-icon.png);
+  }
+  &:hover {
+    background-color: $orange;
+    color: white;
+    border-color: $orange;
+    .ka-arrow-right {
+      background-image: url(../img/icons/arrow-icon.png);
+    }
+  }
+}

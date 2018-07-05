@@ -1,12 +1,10 @@
 %fontGeneral {
-  font-size: 18px;
+  font-size: 16px;
   @extend %ka-fRegular;
 }
 
-$colorMain: #404642;
-*,
-:after,
-:before {
+$colorMain: #333;
+*{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

@@ -1,0 +1,346 @@
+.ka-enrol {
+  position: relative;
+  top: -30px;
+  @extend %ka-fC;
+  @extend %ka-fAI-center;
+  @extend %w-desktop;
+  color: white;
+  margin-bottom: 150px;
+  z-index: 99;
+  div {
+    min-height: 62px;
+    background-color: $orange;
+    &:nth-child(1) {
+      padding: 20px 30px;
+      @extend %ka-fOne;
+    }
+    &:nth-child(2) {
+      button {
+        background-color: $orange-d;
+        padding: 20px 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        min-height: 62px;
+        &:hover {
+          background-color: $orange-l;
+        }
+      }
+    }
+  }
+}
+
+.ka-location {
+  margin-bottom: 200px;
+  &>.ka-content {
+    @extend %ka-fC;
+    @extend %w-desktop;
+    .ka-text {
+      @extend %ka-fOne;
+      text-align: center;
+      background-color: white;
+      padding: 40px;
+      h1 {
+        font-weight: bold;
+      }
+      sub {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+    .ka-image {
+      @extend %ka-fOne;
+      @extend %ka-fC;
+      a {
+        position: relative;
+        @extend %ka-fOne;
+        display: block;
+        color: white;
+        h3 {
+          margin: 0;
+          @extend %ka-pos-center;
+          text-transform: uppercase;
+        }
+        img {
+          display: block;
+          width: 100%;
+        }
+        &:nth-child(1) {}
+        &:nth-child(2) {
+          top: 30px;
+        }
+        &:nth-child(3) {
+          top: -30px;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+.ka-course {
+  margin-bottom: 200px;
+  padding-left: 60px;
+  color: white;
+  &>.ka-content {
+    position: relative;
+    background-color: $blue;
+    background-image: url(../img/bg/bg-course.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .ka-text {
+      position: relative;
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 80px;
+      padding-bottom: 100px;
+      left: -60px;
+      h1 {
+        font-weight: bold;
+      }
+      sub {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.ka-support {
+  margin-bottom: 200px;
+  &>.ka-content {
+    position: relative;
+    .ka-text {
+      position: relative;
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 80px;
+      padding-bottom: 100px;
+      color: white;
+      z-index: 1;
+      h1 {
+        font-weight: bold;
+      }
+      sub {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+    .ka-box-wrap {
+      @extend %w-desktop;
+      @extend %ka-fC;
+      position: relative;
+      z-index: 2;
+      .ka-box {
+        @extend %ka-fOne;
+        padding: 40px;
+        &>.ka-content {
+          padding: 40px;
+          text-align: center;
+          background-color: white;
+        }
+      }
+    }
+    .ka-bg {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 75%;
+      background-image: url(../img/bg/bg-support.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $orange;
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.ka-voice {
+  margin-bottom: 200px;
+  &>.ka-content {
+    position: relative;
+    .ka-talk-wrap {
+      position: relative;
+      padding-left: 20%;
+      padding-right: 60px;
+      z-index: 1;
+      img {
+        display: block;
+        width: 100%;
+      }
+      .ka-talk {
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        max-width: 30%;
+        width: 100%;
+        div {
+          h2,
+          p {
+            float: left;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+          }
+          &:after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+        }
+      }
+    }
+    .ka-say-wrap {
+      position: relative;
+      padding-right: 15%;
+      margin-top: -200px;
+      .ka-say {
+        position: relative;
+        background-color: $blue;
+        padding: 100px 40px;
+        padding-top: 200px;
+        .ka-text {
+          position: relative;
+          max-width: 960px;
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+          padding: 80px;
+          padding-bottom: 40px;
+          color: white;
+          z-index: 1;
+          h1 {
+            font-weight: bold;
+          }
+          sub {
+            font-size: 24px;
+            font-weight: 400;
+          }
+          p {
+            line-height: 30px;
+          }
+        }
+        .ka-group-btn {
+          @extend %ka-fC;
+          justify-content: center;
+          &>div {
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ka-letter {
+  margin-bottom: 200px;
+  &>.ka-content {
+    @extend %w-desktop;
+    background-color: white;
+    .ka-text {
+      text-align: center;
+      padding: 40px;
+      h1 {
+        font-weight: bold;
+      }
+      sub {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+    .ka-list-letter {
+      @extend %ka-fC;
+      &>div {
+        @extend %ka-fOne;
+        padding: 40px;
+      }
+      .ka-letter-main {
+        display: block;
+        figure {
+          display: block;
+          padding: 0;
+          margin: 0;
+          .ka-img {
+            position: relative;
+            overflow: hidden;
+            height: 240px;
+            img {
+              display: block;
+              width: 100%;
+            }
+            .ka-date {
+              background-color: $red;
+              padding: 10px;
+              color: white;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              text-align: center;
+              h1 {
+                margin: 0;
+                line-height: 1;
+                font-weight: bold;
+              }
+              span {
+                text-transform: uppercase;
+              }
+            }
+          }
+          figcaption {
+            padding: 20px 0px;
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+        .ka-address {
+          color: $grey4;
+        }
+      }
+      .ka-letter-child {
+        @extend %ka-ul;
+        .ka-item {
+          @extend %ka-fC;
+          .ka-img-wrap {
+            background-color: red;
+            &:before {
+              content: "";
+              display: block;
+              padding-top: 100%;
+            }
+            .ka-img {}
+          }
+        }
+      }
+    }
+  }
+}

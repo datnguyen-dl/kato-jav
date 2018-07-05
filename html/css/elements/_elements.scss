@@ -123,9 +123,9 @@ $size-icon6:12px;
   color: $grey3;
 }
 
-.ks-title-dec-red,
-.ks-title-dec-white,
-.ks-title-dec-orange {
+.ka-title-dec-red,
+.ka-title-dec-white,
+.ka-title-dec-orange {
   position: relative;
   display: block;
   &:before {
@@ -144,20 +144,47 @@ $size-icon6:12px;
   }
 }
 
-.ks-title-dec-red {
+.ka-title-dec-red {
   &:before {
     border: 2px solid $red;
   }
 }
 
-.ks-title-dec-orange {
+.ka-title-dec-orange {
   &:before {
     border: 2px solid $orange;
   }
 }
 
-.ks-title-dec-white {
+.ka-title-dec-white {
   &:before {
     border: 2px solid white;
+  }
+}
+
+.ka-title-line {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: $colorMain;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+
+.ka-title-line-white {
+  @extend .ka-title-line;
+  &:after {
+    background-color: white;
+  }
+}
+
+.ka-title-line-orange {
+  @extend .ka-title-line;
+  &:after {
+    background-color: $orange;
   }
 }
