@@ -188,3 +188,29 @@ $size-icon6:12px;
     background-color: $orange;
   }
 }
+
+.ka-square-wrap {
+  position: relative;
+  width: 100px;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .ka-square{
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.ka-info{
+  background-color: $blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
