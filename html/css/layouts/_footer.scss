@@ -1,32 +1,228 @@
 footer {
-    position: relative;
+  position: relative;
+  color: white;
+  z-index: 1;
+  .ka-social-share {
+    text-align: center;
+    ul {
+      @extend %ka-ul;
+      li {
+        display: inline-block;
+        padding: 20px;
+        a {
+          img {
+            vertical-align: middle;
+          }
+          span {
+            vertical-align: middle;
+          }
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  a {
     color: white;
-    .ka-social-share {
-        text-align: center;
-        ul {
-            @extend %ka-ul;
-            li {
-                display: inline-block;
-                padding: 20px;
-                a {
-                    img {
-                        vertical-align: middle;
-                    }
-                    span {
-                        vertical-align: middle;
-                    }
-                    &:hover {
-                        color: white;
-                    }
-                }
+    text-decoration: none;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+%ka-contact-bar {
+  @extend %ka-fC;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  button {
+    @extend %ka-fC;
+    @extend %ka-fAI-center;
+    @extend %ka-fJC-center;
+    @extend %ka-fOne;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    i {
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-right: 10px;
+    }
+  }
+}
+
+.ka-contact-bar {
+  @extend %ka-contact-bar;
+  padding: 60px 0px;
+  .ka-apply-btn {
+    background-color: $orange;
+    .ka-apply-icon {
+      background-image: url(../img/icons/white/apply_icon.png);
+    }
+    div {}
+    &:hover {
+      background-color: $orange-dd;
+    }
+  }
+  .ka-contact-btn {
+    background-color: $orange-d;
+    .ka-contact-icon {
+      background-image: url(../img/icons/white/contact_icon.png);
+    }
+    div {}
+    &:hover {
+      background-color: $orange-dd;
+    }
+  }
+}
+
+.ka-partner {
+  background-color: white;
+  padding: 40px 0;
+  padding-bottom: 30px;
+  .owl-carousel-partner {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    .owl-stage-outer {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+      .owl-stage {
+        position: relative;
+        touch-action: manipulation;
+        @extend %ka-fC;
+        .owl-item {
+          @extend %ka-fOne;
+          min-height: 100px; // float: left;
+          background-color: #bebebe;
+          .item {
+            position: relative;
+            overflow: hidden;
+            @extend %ka-fOne;
+            @extend %ka-fC;
+            @extend %ka-fAI-center;
+            @extend %ka-fJC-center;
+            height: 100%;
+            img {
+              @extend %ka-pos-center;
             }
+          }
         }
+      }
     }
-    a {
-        color: white;
-        text-decoration: none;
-        &:hover {
+    .owl-dots {
+      text-align: center;
+      .owl-dot {
+        margin: 0;
+        padding: 5px;
+        span {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border: 1px solid $grey2;
+          border-radius: 10px;
+        }
+        &.active {
+          span {
+            border: 0;
+            background-color: $grey2;
+          }
+        }
+      }
+    }
+    .owl-nav {
+      display: none;
+    }
+  }
+}
+
+.ka-bottom {
+  border-top: 10px solid $orange;
+  background-color: #212121;
+  color: white;
+  &>.ka-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @extend %ka-fC;
+    .ka-logo-footer {
+      padding: 20px 40px;
+      a {
+        display: block;
+        img {
+          height: 40px;
+        }
+      }
+    }
+    .ka-list-link {
+      @extend %ka-ul;
+      @extend %ka-fC;
+      @extend %ka-fOne;
+      @extend %ka-fWrap;
+      &>.ka-item {
+        min-width: 250px;
+        width: 33.33%;
+        a {
+          @extend %ka-fC;
+          padding: 20px 40px;
+          text-transform: none;
+          color: white;
+          &>div{
+            @extend %ka-fOne;
+          }
+          &:hover {
+            background-color: $grey6;
             color: $orange;
+          }
+          &::before {
+            content: '';
+            position: relative;
+            top: 10px;
+            display: block;
+            width: 5px;
+            height: 5px;
+            margin-right: 10px;
+            background-color: $orange;
+          }
         }
+      }
     }
+    .ka-social {
+      padding: 20px;
+      &>a {
+        padding: 10px 20px;
+        display: block;
+        text-transform: none;
+        cursor: pointer;
+        i {
+          display: block;
+          width: 24px;
+          height: 24px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        .ka-facebook-icon {
+          background-image: url(../img/icons/color/facebook-icon.png);
+        }
+        .ka-twitter-icon {
+          background-image: url(../img/icons/color/twitter-icon.png);
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
 }

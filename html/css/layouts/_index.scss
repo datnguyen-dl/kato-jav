@@ -1,22 +1,24 @@
 .ka-enrol {
   position: relative;
-  top: -40px;
+  top: -35px;
   @extend %ka-fC;
-  @extend %w-desktop;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   color: white;
   margin-bottom: 150px;
-  z-index: 99;
+  z-index: 9;
   div {
     min-height: 62px;
     background-color: $orange;
     &:nth-child(1) {
-      padding: 30px 40px;
+      padding: 25px 40px;
       @extend %ka-fOne;
     }
     &:nth-child(2) {
       button {
         background-color: $orange-d;
-        padding: 30px 40px;
+        padding: 25px 40px;
         color: white;
         font-weight: bold;
         font-size: 16px;
@@ -32,6 +34,8 @@
 
 .ka-location {
   margin-bottom: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
   &>.ka-content {
     @extend %ka-fC;
     @extend %w-desktop;
@@ -42,10 +46,12 @@
       padding: 40px;
       h1 {
         font-weight: bold;
+        color: $blue;
       }
       sub {
         font-size: 24px;
         font-weight: 400;
+        color: $blue;
       }
       p {
         line-height: 30px;
@@ -118,7 +124,7 @@
 }
 
 .ka-support {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   &>.ka-content {
     position: relative;
     .ka-text {
@@ -152,8 +158,12 @@
         padding: 40px;
         &>.ka-content {
           padding: 40px;
+          padding-bottom: 80px;
           text-align: center;
           background-color: white;
+          h1 {
+            color: $blue;
+          }
         }
       }
     }
@@ -191,9 +201,14 @@
       padding-left: 10%;
       padding-right: 60px;
       z-index: 1;
-      img {
-        display: block;
+      .ka-image {
+        overflow: hidden;
         width: 100%;
+        max-height: 480px;
+        img {
+          display: block;
+          width: 100%;
+        }
       }
       .ka-talk {
         position: absolute;
@@ -220,12 +235,11 @@
     .ka-say-wrap {
       position: relative;
       padding-right: 15%;
-      margin-top: -200px;
+      margin-top: -100px;
       .ka-say {
         position: relative;
-        background-color: $blue;
-        padding: 100px 40px;
-        padding-top: 200px;
+        background-color: $grey1;
+        padding: 100px 40px; // padding-top: 200px;
         .ka-text {
           position: relative;
           max-width: 960px;
@@ -260,20 +274,22 @@
 }
 
 .ka-letter {
-  margin-bottom: 200px;
+  margin-bottom: 60px;
   &>.ka-content {
     @extend %w-desktop;
     background-color: white;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     .ka-text {
       text-align: center;
       padding: 40px;
       h1 {
         font-weight: bold;
+        color: $blue;
       }
       sub {
         font-size: 24px;
         font-weight: 400;
+        color: $blue;
       }
       p {
         line-height: 30px;
@@ -281,6 +297,7 @@
     }
     .ka-list-letter {
       @extend %ka-fC;
+      margin-bottom: 20px;
       &>div {
         @extend %ka-fOne;
         padding: 20px;
@@ -295,7 +312,7 @@
           .ka-img {
             position: relative;
             overflow: hidden;
-            height: 300px;
+            height: 360px;
             img {
               display: block;
               min-width: 100%;
@@ -320,17 +337,23 @@
             }
           }
           figcaption {
-            padding: 20px 0px;
+            padding-top: 20px;
             font-size: 20px;
             font-weight: bold;
+            color: $blue;
           }
         }
         .ka-address {
-          color: $grey4;
+          color: $grey3;
           @extend %ka-fC;
           @extend %ka-fWrap;
-          div{
+          div {
             margin-right: 20px;
+          }
+          .local-icon {
+            background-image: url(../img/icons/white/bg-support.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
           }
         }
         &:hover {
@@ -343,7 +366,7 @@
           padding: 20px;
           @extend %ka-fC;
           .ka-img-wrap {
-            width: 25%;
+            width: 20%;
             min-width: 150px;
             .ka-square-wrap {
               position: relative;
@@ -371,9 +394,13 @@
               @extend %ka-fWrap;
               @extend %ka-fAI-center;
               margin-bottom: 10px;
+              color: $grey3;
               div {
                 margin-right: 10px;
               }
+            }
+            h2 {
+              color: $blue;
             }
             h2,
             p {

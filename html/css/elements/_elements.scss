@@ -198,7 +198,7 @@ $size-icon6:12px;
     display: block;
     padding-top: 100%;
   }
-  .ka-square{
+  .ka-square {
     overflow: hidden;
     position: absolute;
     top: 0px;
@@ -208,9 +208,68 @@ $size-icon6:12px;
   }
 }
 
-.ka-info{
+.ka-info {
   background-color: $blue;
   color: white;
-  padding: 5px 10px;
+  padding: 0 10px;
   border-radius: 20px;
+}
+
+.ka-title-set {
+  position: relative;
+  padding: 15px 20px;
+  border-left: 3px solid $orange;
+  @extend %ka-fC;
+  @extend %ka-fAI-center;
+  @extend %w-normal;
+  i {
+    position: relative;
+    z-index: 1;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+  }
+  .ka-facebook-icon {
+    background-image: url(../img/icons/color/facebook-icon.png);
+  }
+  div {
+    position: relative;
+    z-index: 1;
+    @extend %ka-fOne;
+    h2 {
+      margin: 0;
+      line-height: 28px;
+      color: $blue;
+      font-weight: bold;
+    }
+    sub {
+      margin: 0;
+      color: $grey2;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/pattern/bg_point_01.png");
+    opacity: 0.5;
+  }
+}
+
+.ka-list-row{
+  @extend %ka-ul;
+  @extend %w-normal;
+  &>li{
+    padding: 20px;
+    border-bottom: 1px solid $grey6;
+    &:last-child{
+      border: 0;
+    }
+  }
 }

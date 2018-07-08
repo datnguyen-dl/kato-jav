@@ -2,6 +2,7 @@ button {
   @extend %fontGeneral;
   border: 0;
   background-color: transparent;
+  font-weight: 300;
   cursor: pointer;
   &:focus {
     outline: none;
@@ -15,14 +16,15 @@ button {
   z-index: 9;
   @extend %ka-fC;
   @extend %ka-fAI-center;
-  @extend %ka-fLight;
+  font-weight: 200;
+  font-size: 14px;
   color: white;
   &:before {
     content: '';
     display: block;
     min-width: 32px;
     min-height: 32px;
-    background-image: url(../img/icons/scroll-icon.png);
+    background-image: url(../img/icons/white/scroll-icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 24px;
@@ -39,14 +41,15 @@ button {
   z-index: 9;
   @extend %ka-fC;
   @extend %ka-fAI-center;
-  @extend %ka-fLight;
+  font-weight: 200;
+  font-size: 14px;
   color: white;
   &:after {
     content: '';
     display: block;
     min-width: 32px;
     min-height: 32px;
-    background-image: url(../img/icons/sound-icon.png);
+    background-image: url(../img/icons/white/sound-icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 24px;
@@ -62,25 +65,31 @@ button {
   font-weight: bold;
   color: #333;
   border: 2px solid #333;
+  min-width: 280px;
+  max-width: 400px;
+  text-decoration: none;
+  line-height: 24px;
   &>div {
     padding: 10px 20px;
+    @extend %ka-fOne;
+    text-align: left;
   }
   .ka-arrow-right {
-    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     display: block;
     min-width: 32px;
     min-height: 32px;
-    background-image: url(../img/icons/arrow-orange-icon.png);
+    background-image: url(../img/icons/color/arrow-orange-icon.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 24px 24px;
+    background-size: cover;
   }
   &.ka-big {
+    max-width: 320px;
+    width: 100%;
     &>div {
-      padding: 20px 30px;
-    }
-    .ka-arrow-right {
-      padding: 20px 30px;
+      padding: 20px;
     }
   }
 }
@@ -90,13 +99,13 @@ button {
   color: $orange;
   border-color: $orange;
   .ka-arrow-right {
-    background-image: url(../img/icons/arrow-orange-icon.png);
+    background-image: url(../img/icons/color/arrow-orange-icon.png);
   }
   &:hover {
     background-color: $orange;
     color: white;
     .ka-arrow-right {
-      background-image: url(../img/icons/arrow-icon.png);
+      background-image: url(../img/icons/white/arrow-icon.png);
     }
   }
 }
@@ -106,14 +115,14 @@ button {
   color: white;
   border-color: white;
   .ka-arrow-right {
-    background-image: url(../img/icons/arrow-icon.png);
+    background-image: url(../img/icons/white/arrow-icon.png);
   }
   &:hover {
     background-color: $orange;
     color: white;
     border-color: $orange;
     .ka-arrow-right {
-      background-image: url(../img/icons/arrow-icon.png);
+      background-image: url(../img/icons/white/arrow-icon.png);
     }
   }
 }

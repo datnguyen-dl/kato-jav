@@ -1,5 +1,6 @@
 $heightSlider:100vh;
 .ks-slider {
+  position: relative;
   background-color: $grey2;
   min-height: $heightSlider;
   overflow: hidden;

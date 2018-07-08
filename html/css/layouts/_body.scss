@@ -23,12 +23,6 @@ body {
   right: 0;
 }
 
-%w-desktop {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 content,
 section {
   display: block;
@@ -52,4 +46,34 @@ header,
 content {
   position: relative;
   z-index: 1;
+}
+
+%w-desktop {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.w-desktop {
+  @extend %w-desktop;
+}
+
+%w-normal {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.w-normal {
+  @extend %w-normal;
+}
+
+%w-small {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.w-small {
+  @extend %w-small;
 }
