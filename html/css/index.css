@@ -681,7 +681,7 @@ textarea, .ka-fsRob {
   flex-wrap: nowrap;
   -ms-flex-wrap: none; }
 
-.ka-fWrap, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav > .ka-menu, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-bottom > .ka-content .ka-list-link {
+.ka-fWrap, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav > .ka-menu, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-bottom > .ka-content .ka-list-link, .ka-tabs-course > .ka-content > ul > li {
   -moz-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
@@ -1497,6 +1497,19 @@ content {
   width: 100%;
   margin: 0 auto; }
 
+.ka-breadcrumb {
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 10px 40px;
+  font-size: 14px; }
+  .ka-breadcrumb a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.25); }
+    .ka-breadcrumb a:last-child {
+      color: #ffb116; }
+    .ka-breadcrumb a:hover {
+      color: #f89604; }
+
 .ka-enrol {
   position: relative;
   top: -35px;
@@ -2092,6 +2105,7 @@ footer {
       .ka-tabs-course > .ka-content > ul > li:last-child {
         border: 0; }
       .ka-tabs-course > .ka-content > ul > li > div {
+        min-width: 200px;
         width: 20%;
         border-right: 1px solid rgba(255, 255, 255, 0.09); }
         .ka-tabs-course > .ka-content > ul > li > div:last-child {

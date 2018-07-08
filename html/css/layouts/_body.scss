@@ -77,3 +77,20 @@ content {
 .w-small {
   @extend %w-small;
 }
+
+.ka-breadcrumb {
+  background-color: $grey8;
+  padding: 10px 40px;
+  font-size: 14px;
+  a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: $grey4;
+    &:last-child {
+      color: $orange;
+    }
+    &:hover{
+      color: $orange-d;
+    }
+  }
+}

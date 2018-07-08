@@ -67,12 +67,14 @@
       @extend %ka-ul;
       &>li {
         @extend %ka-fC;
+        @extend %ka-fWrap;
         border-bottom: 1px solid $white7;
         padding: 20px 0;
         &:last-child{
           border: 0;
         }
         &>div {
+          min-width: 200px;
           width: 20%;
           @extend %ka-fC;
           border-right: 1px solid $white7;

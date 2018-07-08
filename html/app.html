@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="keywords" content="education">
   <meta name="author" content="DATTANNGUYEN">
-  <title>Education</title>
+  <title>Application</title>
   <script src="../js/fontsize.js?v=1"></script>
   <link rel="stylesheet" type="text/css" href="./css/index.css?v=1">
   <!-- Owl Stylesheets -->
@@ -21,7 +21,7 @@
 
 <body>
   <header>
-    <nav class="ka-activeRM">
+    <nav class="ka-active">
       <div class="ka-logo">
         <a href="index.html">
           <img src="./img/logo/logo-white.png" />
@@ -198,97 +198,30 @@
         </li>
       </ul>
     </nav>
-    <div class="ks-slider">
+    <div class="ks-slider-child">
       <div class="owl-carousel owl-theme">
-        <div class="item" data-videosrc="http://vpmdev.com/window.mp4">
-          <img src='//placehold.it/800x600.png' />
-          <div class="ka-title-slider">
-            <div class='ka-title'>
-              <h1 class="ka-title-dec-orange">Promo
-                <br>Title Here</h1>
-              <a href="#" class="">Watch Video</a>
-              <span> - </span>
-              <a href="#" class="">Learn More</a>
-            </div>
-          </div>
-          <i class="ka-mask"></i>
-        </div>
-        <div class="item" data-videosrc="http://vpmdev.com/window.mp4">
-          <img src='//placehold.it/800x600.png' />
-          <div class="ka-title-slider">
-            <div class='ka-title'>
-              <h1 class="ka-title-dec-orange">Promo
-                <br>Title Here</h1>
-              <a href="#" class="">Watch Video</a>
-              <span> - </span>
-              <a href="#" class="">Learn More</a>
-            </div>
-          </div>
-          <i class="ka-mask"></i>
+        <div class="item">
+          <img src="./img/bg/bg-support.jpg" />
+          <h1>About Course</h1>
         </div>
       </div>
       <script>
-        $(document).ready(function () {
-          var owl = $('.owl-carousel');
-          owl.owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: false,
-            dots: true,
-            items: 1,
-            touchDrag: false,
-            mouseDrag: false
-          })
-          owl.on('translate.owl.carousel', function (e) {
-            $('.owl-item video').each(function () {
-              $(this).get(0).pause();
-            });
-          });
-          owl.on('translated.owl.carousel', function (e) {
-            $('.owl-item.active video').get(0).play();
-          })
-          if (!isMobile()) {
-            $('.owl-item .item').each(function () {
-              var attr = $(this).attr('data-videosrc');
-              if (typeof attr !== typeof undefined && attr !== false) {
-                console.log('hit');
-                var videosrc = $(this).attr('data-videosrc');
-                $(this).prepend('<video muted><source src="' + videosrc + '" type="video/mp4"></video>');
-              }
-            });
-            $('.owl-item.active video').attr('autoplay', true).attr('loop', true);
-          }
-        });
-
-        function isMobile(width) {
-          if (width == undefined) {
-            width = 719;
-          }
-          if (window.innerWidth <= width) {
-            return true;
-          } else {
-            return false;
-          }
-        }
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          items: 1
+        })
       </script>
-      <button class="ka-scroll-btn">
-        <div>Scroll</div>
-      </button>
-      <button class="ka-sound-btn">
-        <div>Sound</div>
-      </button>
     </div>
-    <div class="ka-enrol">
-      <div>Applications for ISI Summer Course 2018 are now open!</div>
-      <div>
-        <button>Enrol now here!</button>
-      </div>
-    </div>
-    <i class="ka-pref"></i>
-    <i class="ka-suf"></i>
+    <!-- <i class="ka-pref"></i>
+    <i class="ka-suf"></i> -->
   </header>
   <content>
-   
+      <div class="ka-breadcrumb">
+          <a href="index.html">Home</a><a>/</a><a href="#">Application</a>
+        </div>
+    <section></section>
   </content>
   <footer>
     <div class="ka-contact-bar">
@@ -353,22 +286,34 @@
         </div>
         <ul class="ka-list-link">
           <li class="ka-item">
-            <a href="#"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div></a>
+            <a href="#">
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            </a>
           </li>
           <li class="ka-item">
-            <a href="#"><div>Psum dolor sit amet, consectetur adipiscing elit</div></a>
+            <a href="#">
+              <div>Psum dolor sit amet, consectetur adipiscing elit</div>
+            </a>
           </li>
           <li class="ka-item">
-            <a href="#"><div>Amet consectetur adipiscing elit</div></a>
+            <a href="#">
+              <div>Amet consectetur adipiscing elit</div>
+            </a>
           </li>
           <li class="ka-item">
-            <a href="#"><div>Dolor sit amet, consectetur adipiscing elit</div></a>
+            <a href="#">
+              <div>Dolor sit amet, consectetur adipiscing elit</div>
+            </a>
           </li>
           <li class="ka-item">
-            <a href="#"><div>consectetur dolor sit amet, adipiscing elit</div></a>
+            <a href="#">
+              <div>consectetur dolor sit amet, adipiscing elit</div>
+            </a>
           </li>
           <li class="ka-item">
-            <a href="#"><div>Adipiscing amet, consectetur adipiscing elit</div></a>
+            <a href="#">
+              <div>Adipiscing amet, consectetur adipiscing elit</div>
+            </a>
           </li>
         </ul>
         <div class="ka-social">
@@ -389,7 +334,7 @@
     <i>C</i>
     <i>D</i>
   </div> -->
-  <div class="ka-bg-main"></div>
+  <!-- <div class="ka-bg-main"></div> -->
 </body>
 
 
