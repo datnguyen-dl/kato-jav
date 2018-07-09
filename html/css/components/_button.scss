@@ -66,7 +66,7 @@ button {
   color: #333;
   border: 2px solid #333;
   min-width: 280px;
-  max-width: 400px;
+  max-width: 320px;
   text-decoration: none;
   line-height: 24px;
   &>div {
@@ -86,7 +86,7 @@ button {
     background-size: cover;
   }
   &.ka-big {
-    max-width: 320px;
+    max-width: 400px;
     width: 100%;
     &>div {
       padding: 20px;
