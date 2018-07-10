@@ -68,14 +68,17 @@ header {
                     @extend %ka-fAI-center;
                     color: $orange;
                     font-weight: 400;
-                    i {
-                      width: 24px;
-                      height: 24px;
-                      background-repeat: no-repeat;
-                      background-position: center;
-                      background-size: cover;
-                      margin-right: 5px;
+                    .lnr{
+                      margin-right: 10px;
                     }
+                    // i {
+                    //   width: 24px;
+                    //   height: 24px;
+                    //   background-repeat: no-repeat;
+                    //   background-position: center;
+                    //   background-size: cover;
+                    //   margin-right: 5px;
+                    // }
                     h3 {
                       margin: 0;
                       padding: 0;

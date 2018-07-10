@@ -347,13 +347,13 @@
           color: $grey3;
           @extend %ka-fC;
           @extend %ka-fWrap;
+          // font-size: 16px;
           div {
             margin-right: 20px;
           }
-          .local-icon {
-            background-image: url(../img/icons/white/bg-support.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
+          .lnr{
+            // font-size: 18px;
+            color: $orange;
           }
         }
         &:hover {
@@ -393,8 +393,12 @@
               @extend %ka-fC;
               @extend %ka-fWrap;
               @extend %ka-fAI-center;
-              margin-bottom: 10px;
               color: $grey3;
+              // font-size: 16px;
+              .lnr{
+                // font-size: 18px;
+                color: $orange;
+              }
               div {
                 margin-right: 10px;
               }

@@ -213,6 +213,7 @@ $size-icon6:12px;
   color: white;
   padding: 0 10px;
   border-radius: 20px;
+  font-size: 16px;
 }
 
 .ka-title-set {
@@ -262,14 +263,27 @@ $size-icon6:12px;
   }
 }
 
-.ka-list-row{
+.ka-list-row {
   @extend %ka-ul;
   @extend %w-normal;
-  &>li{
+  &>li {
     padding: 20px;
     border-bottom: 1px solid $grey6;
-    &:last-child{
+    &:last-child {
       border: 0;
     }
+  }
+}
+
+.ka-link-btn {
+  display: block;
+  // color: $colorMain;
+  color: $blue;
+  text-decoration: none;
+  .lnr {
+    margin-right: 10px;
+  }
+  &:hover{
+    color: $orange;
   }
 }

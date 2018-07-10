@@ -1,0 +1,20 @@
+// <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+@import url('https://cdn.linearicons.com/free/1.0.0/icon-font.min.css');
+// @import url('https://pro.fontawesome.com/releases/v5.1.0/css/all.css');
+// icon
+%ka-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ka-facebook-icon{
+  background-image: url("../img/icons/color/facebook-icon.png");
+}
+
+.ka-twitter-icon{
+  background-image: url("../img/icons/color/twitter-icon.png");
+}

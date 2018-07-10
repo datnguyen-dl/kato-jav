@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:100,200,300,400,700,900");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
 body,
 input,
 textarea, button, input[type="text"],
@@ -428,6 +429,12 @@ h4 {
 .ka-fs7 {
   font-size: 7px; }
 
+.ka-facebook-icon {
+  background-image: url("../img/icons/color/facebook-icon.png"); }
+
+.ka-twitter-icon {
+  background-image: url("../img/icons/color/twitter-icon.png"); }
+
 body,
 input,
 textarea, .ka-fsRob {
@@ -451,12 +458,12 @@ textarea, .ka-fsRob {
   user-select: none; }
 
 .format-UL,
-.ka-ul, .ka-list-row, .ka-letter > .ka-content .ka-list-letter .ka-letter-child, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items, header > nav ul, footer .ka-social-share ul, .ka-bottom > .ka-content .ka-list-link, .ka-tabs-style > .ka-content > ul, .ka-tab-wrap .ka-tab-btn {
+.ka-ul, .ka-list-row, .ka-letter > .ka-content .ka-list-letter .ka-letter-child, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items, header > nav ul, footer .ka-social-share ul, .ka-bottom > .ka-content .ka-list-link, .ka-tabs-style > .ka-content > ul, .ka-tab-wrap .ka-tab-btn, .ka-local-info .ka-content > div:nth-child(1) > ul {
   margin: 0;
   padding: 0;
   list-style: none; }
   .ka-list-circle-el.format-UL,
-  .ka-list-circle-el.ka-ul, .ka-list-circle-el.ka-list-row, .ka-letter > .ka-content .ka-list-letter .ka-list-circle-el.ka-letter-child, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-circle-el.ka-list-items, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-circle-el.ka-list-child-items, header > nav ul.ka-list-circle-el, footer .ka-social-share ul.ka-list-circle-el, .ka-bottom > .ka-content .ka-list-circle-el.ka-list-link, .ka-tabs-style > .ka-content > ul.ka-list-circle-el, .ka-tab-wrap .ka-list-circle-el.ka-tab-btn {
+  .ka-list-circle-el.ka-ul, .ka-list-circle-el.ka-list-row, .ka-letter > .ka-content .ka-list-letter .ka-list-circle-el.ka-letter-child, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-circle-el.ka-list-items, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-circle-el.ka-list-child-items, header > nav ul.ka-list-circle-el, footer .ka-social-share ul.ka-list-circle-el, .ka-bottom > .ka-content .ka-list-circle-el.ka-list-link, .ka-tabs-style > .ka-content > ul.ka-list-circle-el, .ka-tab-wrap .ka-list-circle-el.ka-tab-btn, .ka-local-info .ka-content > div:nth-child(1) > ul.ka-list-circle-el {
     list-style-type: circle;
     margin-left: 16px; }
 
@@ -563,7 +570,8 @@ textarea, .ka-fsRob {
   background-color: #156eaa;
   color: white;
   padding: 0 10px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  font-size: 16px; }
 
 .ka-title-set {
   position: relative;
@@ -607,7 +615,17 @@ textarea, .ka-fsRob {
   .ka-list-row > li:last-child {
     border: 0; }
 
-.ka-title-set, .ka-fC-mob, .ka-fC, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn, .ka-white-btn, .ks-slider .owl-carousel .owl-dots, .ka-enrol, .ka-location > .ka-content, .ka-location > .ka-content .ka-image, .ka-support > .ka-content .ka-box-wrap, .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-group-btn, .ka-letter > .ka-content .ka-list-letter, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav, header > nav > .ka-menu, header > nav > .ka-menu > li > .ka-popup > .ka-content, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items > li, .ka-contact-bar, .ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tabs-style > .ka-content > ul > li, .ka-tabs-style > .ka-content > ul > li > div, .ka-tab-wrap .ka-tab-btn {
+.ka-link-btn {
+  display: block;
+  color: #156eaa;
+  text-decoration: none; }
+  .ka-link-btn .lnr {
+    margin-right: 10px; }
+  .ka-link-btn:hover {
+    color: #ffb116; }
+
+.ka-title-set, .ka-fC-mob, .ka-fC, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn, .ka-white-btn, .ks-slider .owl-carousel .owl-dots, .ka-enrol, .ka-location > .ka-content, .ka-location > .ka-content .ka-image, .ka-support > .ka-content .ka-box-wrap, .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-group-btn, .ka-letter > .ka-content .ka-list-letter, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav, header > nav > .ka-menu, header > nav > .ka-menu > li > .ka-popup > .ka-content, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items > li, .ka-contact-bar, .ka-contact-bar a,
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tabs-style > .ka-content > ul > li, .ka-tabs-style > .ka-content > ul > li > div, .ka-tab-wrap .ka-tab-btn, .ka-local-info .ka-content, .ka-local-info .ka-content > div:nth-child(1) > ul {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -622,7 +640,8 @@ textarea, .ka-fsRob {
   .ka-fC-mob {
     display: block; } }
 
-.ka-fJC-center, .ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+.ka-fJC-center, .ka-contact-bar a,
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
   -moz-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center; }
@@ -686,7 +705,8 @@ textarea, .ka-fsRob {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.ka-title-set div, .ka-fOne, .ka-orange-btn > div, .ka-white-btn > div, .ka-enrol div:nth-child(1), .ka-location > .ka-content .ka-text, .ka-location > .ka-content .ka-image, .ka-location > .ka-content .ka-image a, .ka-support > .ka-content .ka-box-wrap .ka-box, .ka-letter > .ka-content .ka-list-letter > div, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content, header > nav > .ka-logo, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a > div, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tab-wrap .ka-tab-btn > li {
+.ka-title-set div, .ka-fOne, .ka-orange-btn > div, .ka-white-btn > div, .ka-enrol div:nth-child(1), .ka-location > .ka-content .ka-text, .ka-location > .ka-content .ka-image, .ka-location > .ka-content .ka-image a, .ka-support > .ka-content .ka-box-wrap .ka-box, .ka-letter > .ka-content .ka-list-letter > div, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content, header > nav > .ka-logo, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-contact-bar a,
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a > div, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tab-wrap .ka-tab-btn > li, .ka-local-info .ka-content > div:nth-child(1) > ul > li, .ka-local-info .ka-content > div:nth-child(2) {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex: 1;
@@ -694,7 +714,7 @@ textarea, .ka-fsRob {
   flex: 1;
   min-width: 0; }
 
-.ka-fTwo {
+.ka-fTwo, .ka-local-info .ka-content > div:nth-child(1) {
   -webkit-box-flex: 2;
   -moz-box-flex: 2;
   -webkit-flex: 2;
@@ -716,13 +736,14 @@ textarea, .ka-fsRob {
   align-self: center;
   -ms-align-self: center; }
 
-.ka-title-set, .ka-fAI-center, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn, .ka-white-btn, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, .ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tab-wrap .ka-tab-btn {
+.ka-title-set, .ka-fAI-center, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn, .ka-white-btn, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tab-wrap .ka-tab-btn {
   -moz-align-items: center;
   -webkit-align-items: center;
   align-items: center;
   -ms-align-items: center; }
 
-.ka-fJC-center, .ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+.ka-fJC-center, .ka-contact-bar a,
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
   -moz-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
@@ -1192,7 +1213,7 @@ button {
     opacity: 0.5; }
 
 .ka-orange-btn, .ka-white-btn {
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
   border: 2px solid #333;
   min-width: 280px;
@@ -1772,10 +1793,8 @@ content {
           color: rgba(0, 0, 0, 0.45); }
           .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address div {
             margin-right: 20px; }
-          .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address .local-icon {
-            background-image: url(../img/icons/white/bg-support.jpg);
-            background-repeat: no-repeat;
-            background-position: center; }
+          .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address .lnr {
+            color: #ffb116; }
         .ka-letter > .ka-content .ka-list-letter .ka-letter-main:hover {
           background-color: rgba(0, 0, 0, 0.09); }
       .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item {
@@ -1798,8 +1817,9 @@ content {
         .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content {
           padding-left: 30px; }
           .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date {
-            margin-bottom: 10px;
             color: rgba(0, 0, 0, 0.45); }
+            .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date .lnr {
+              color: #ffb116; }
             .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date div {
               margin-right: 10px; }
           .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content h2 {
@@ -1862,13 +1882,8 @@ header {
               header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a {
                 color: #ffb116;
                 font-weight: 400; }
-                header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a i {
-                  width: 24px;
-                  height: 24px;
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: cover;
-                  margin-right: 5px; }
+                header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a .lnr {
+                  margin-right: 10px; }
                 header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a h3 {
                   margin: 0;
                   padding: 0;
@@ -1936,17 +1951,15 @@ footer {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
+  .ka-contact-bar a,
   .ka-contact-bar button {
     padding: 20px;
     cursor: pointer;
     color: white; }
-    .ka-contact-bar button i {
-      width: 24px;
-      height: 24px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      margin-right: 10px; }
+    .ka-contact-bar a .lnr,
+    .ka-contact-bar button .lnr {
+      font-size: 22px;
+      margin-right: 5px; }
 
 .ka-contact-bar {
   padding: 60px 0px; }
@@ -2156,17 +2169,38 @@ footer {
 
 .ka-local-info .ka-img {
   width: 100%;
-  height: 500px;
+  height: 80vh;
   overflow: hidden; }
   .ka-local-info .ka-img img {
     display: block;
     width: 100%; }
 .ka-local-info .ka-content {
   position: relative;
-  margin-top: -150px;
-  padding: 40px;
+  margin-top: -15vh;
   background-color: white;
   z-index: 1; }
+  .ka-local-info .ka-content > div {
+    padding: 40px;
+    padding-bottom: 60px; }
+    .ka-local-info .ka-content > div:nth-child(1) > h1 {
+      margin: 0;
+      color: #156eaa;
+      font-weight: bold; }
+    .ka-local-info .ka-content > div:nth-child(1) p {
+      margin-bottom: 60px; }
+    .ka-local-info .ka-content > div:nth-child(1) > ul > li {
+      text-align: center; }
+      .ka-local-info .ka-content > div:nth-child(1) > ul > li i {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      .ka-local-info .ka-content > div:nth-child(1) > ul > li .ka-facebook-icon {
+        background-image: url(../img/icons/color/facebook-icon.png); }
+    .ka-local-info .ka-content > div:nth-child(2) {
+      background-color: rgba(0, 0, 0, 0.02); }
 
 .ani-all1 {
   transition: all 0.1s ease; }

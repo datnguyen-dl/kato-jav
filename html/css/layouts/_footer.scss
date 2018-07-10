@@ -38,22 +38,27 @@ footer {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  a,
   button {
     @extend %ka-fC;
-    @extend %ka-fAI-center;
+    // @extend %ka-fAI-center;
     @extend %ka-fJC-center;
     @extend %ka-fOne;
     padding: 20px;
     cursor: pointer;
     color: white;
-    i {
-      width: 24px;
-      height: 24px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      margin-right: 10px;
+    .lnr{
+      font-size: 22px;
+      margin-right: 5px;
     }
+     // i {
+    //   width: 24px;
+    //   height: 24px;
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    //   background-size: cover;
+    //   margin-right: 10px;
+    // }
   }
 }
 
@@ -179,7 +184,7 @@ footer {
           text-transform: none;
           color: white;
           font-size: 16px;
-          &>div{
+          &>div {
             @extend %ka-fOne;
           }
           &:hover {
