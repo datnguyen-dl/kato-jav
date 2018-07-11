@@ -1,0 +1,66 @@
+.ka-school-page{
+
+}
+
+
+.ka-activity {
+  background-color: #212121;
+  padding: 80px 0;
+  padding-bottom: 30px;
+  .owl-carousel-partner {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    .owl-stage-outer {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+      .owl-stage {
+        position: relative;
+        touch-action: manipulation;
+        @extend %ka-fC;
+        .owl-item {
+          @extend %ka-fOne;
+          min-height: 300px; // float: left;
+          background-color: #bebebe;
+          .item {
+            position: relative;
+            overflow: hidden;
+            @extend %ka-fOne;
+            @extend %ka-fC;
+            @extend %ka-fAI-center;
+            @extend %ka-fJC-center;
+            height: 100%;
+            img {
+              @extend %ka-pos-center;
+            }
+          }
+        }
+      }
+    }
+    .owl-dots {
+      text-align: center;
+      .owl-dot {
+        margin: 0;
+        padding: 5px;
+        span {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border: 1px solid $white1;
+          border-radius: 10px;
+        }
+        &.active {
+          span {
+            border: 0;
+            background-color: $white1;
+          }
+        }
+      }
+    }
+    .owl-nav {
+      display: none;
+    }
+  }
+}

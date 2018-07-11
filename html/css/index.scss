@@ -5,9 +5,8 @@
 @import "elements/icon";
 @import "elements/elements";
 @import "elements/flex";
-@import "elements/padding";
-@import "elements/margin";
-@import "elements/responsive";
+@import "elements/col";
+
 //components=======
 @import "components/button";
 @import "components/checkbox";
@@ -46,3 +45,8 @@
 @import "layouts/login";
 //ani================
 @import "ani/ani";
+
+// element
+@import "elements/padding";
+@import "elements/margin";
+@import "elements/responsive";

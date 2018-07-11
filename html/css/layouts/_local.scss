@@ -1,4 +1,43 @@
-.ka-local-page {}
+.ka-local-page {
+  .ka-map {
+    width: 100%;
+    overflow: hidden;
+    img {
+      display: block;
+    }
+  }
+  .ka-group-btn {
+    position: relative;
+    background-image: url(../img/bg/bg-support.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    &>.ka-content {
+      @extend %w-normal;
+      @extend %ka-fC;
+      padding: 40px;
+      &>.ka-item {
+        @extend %ka-fOne;
+        text-align: center;
+        padding: 40px;
+        &>div {
+          padding: 40px 20px;
+          background-color: $orange; // border: 2px solid transparent;
+          &>span {
+            display: block;
+            font-size: 72px;
+            margin-bottom: 30px;
+            color: white;
+          }
+          &:hover {
+            background-color: $orange-dd; // border: 2px solid $orange;
+          }
+        }
+      }
+    }
+  }
+}
 
 .ka-tab-wrap {
   @extend %w-normal;
@@ -54,6 +93,7 @@
       padding-bottom: 60px;
       &:nth-child(1) {
         @extend %ka-fTwo;
+        border-right: 1px solid $grey6;
         &>h1 {
           margin: 0;
           color: $blue;

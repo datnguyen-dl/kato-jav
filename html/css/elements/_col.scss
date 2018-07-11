@@ -1,0 +1,90 @@
+.ka-fCol2 {
+  @extend %ka-fC;
+  @extend %ka-fWrap;
+  .ka-col {
+    width: 50%;
+    @media (max-width: 960px) {
+      // width: 50%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.ka-fCol3 {
+  @extend %ka-fC;
+  @extend %ka-fWrap;
+  .ka-col {
+    width: 33.33%;
+    @media (max-width: 960px) {
+      width: 50%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.ka-fCol4 {
+  @extend %ka-fC;
+  @extend %ka-fWrap;
+  .ka-col {
+    width: 25%;
+    @media (max-width: 960px) {
+      width: 33%;
+    }
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+  }
+}
+
+.ka-fCol2-1 {
+  @extend %ka-fC;
+  .ka-col {
+    &:nth-child(1) {
+      @extend %ka-fTwo;
+    }
+    &:nth-child(2) {
+      @extend %ka-fOne;
+    }
+    
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.ka-fCol1-2 {
+  @extend %ka-fC;
+  .ka-col {
+    &:nth-child(1) {
+      @extend %ka-fOne;
+    }
+    &:nth-child(2) {
+      @extend %ka-fTwo;
+    }
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.ka-fCol3-2 {
+  @extend %ka-fC;
+  .ka-col {
+    &:nth-child(1) {
+      @extend %ka-fThree;
+    }
+    &:nth-child(2) {
+      @extend %ka-fTwo;
+    }
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

@@ -34,55 +34,51 @@ footer {
 
 %ka-contact-bar {
   @extend %ka-fC;
-  padding: 20px;
+  padding: 60px 0px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+    display: block;
+  }
   a,
   button {
-    @extend %ka-fC;
-    // @extend %ka-fAI-center;
+    @extend %ka-fC; // @extend %ka-fAI-center;
     @extend %ka-fJC-center;
     @extend %ka-fOne;
     padding: 20px;
+    font-weight: 500;
     cursor: pointer;
     color: white;
-    .lnr{
-      font-size: 22px;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      &:nth-child(1){
+        margin-bottom: 20px;
+      }
+    }
+    .lnr {
+      font-size: 24px;
       margin-right: 5px;
     }
-     // i {
-    //   width: 24px;
-    //   height: 24px;
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    //   background-size: cover;
-    //   margin-right: 10px;
-    // }
   }
 }
 
 .ka-contact-bar {
   @extend %ka-contact-bar;
-  padding: 60px 0px;
+  
   .ka-apply-btn {
     background-color: $orange;
-    .ka-apply-icon {
-      background-image: url(../img/icons/white/apply_icon.png);
-    }
-    div {}
     &:hover {
       background-color: $orange-dd;
+      color: white;
     }
   }
   .ka-contact-btn {
     background-color: $orange-d;
-    .ka-contact-icon {
-      background-image: url(../img/icons/white/contact_icon.png);
-    }
-    div {}
     &:hover {
       background-color: $orange-dd;
+      color: white;
     }
   }
 }
@@ -161,8 +157,15 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     @extend %ka-fC;
+    @media (max-width: 768px) {
+      display: block;
+      padding: 0;
+    }
     .ka-logo-footer {
       padding: 20px 40px;
+      @media (max-width: 768px) {
+        padding: 20px;
+      }
       a {
         display: block;
         img {
@@ -184,6 +187,9 @@ footer {
           text-transform: none;
           color: white;
           font-size: 16px;
+          @media (max-width: 768px) {
+            padding: 10px 20px;
+          }
           &>div {
             @extend %ka-fOne;
           }

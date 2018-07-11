@@ -276,14 +276,61 @@ $size-icon6:12px;
 }
 
 .ka-link-btn {
-  display: block;
-  // color: $colorMain;
+  display: block; // color: $colorMain;
   color: $blue;
   text-decoration: none;
   .lnr {
-    margin-right: 10px;
+    margin-right: 5px;
   }
-  &:hover{
+  &:hover {
     color: $orange;
+  }
+}
+
+%ka-img-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+  }
+  &>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      min-width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.ka-img-wrap5 {
+  @extend %ka-img-wrap;
+  &:before {
+    padding-top: 55%;
+  }
+}
+
+.ka-img-wrap6 {
+  @extend %ka-img-wrap;
+  &:before {
+    padding-top: 65%;
+  }
+}
+
+.ka-hover-bg-dark {
+  &:hover {
+    background-color: $grey7;
   }
 }
