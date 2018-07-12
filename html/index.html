@@ -7,7 +7,7 @@
   <meta name="keywords" content="education">
   <meta name="author" content="DATTANNGUYEN">
   <title>Education</title>
-  <script src="../js/fontsize.js?v=1"></script>
+
   <link rel="stylesheet" type="text/css" href="./css/index.css?v=1">
   <!-- Owl Stylesheets -->
   <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
@@ -21,7 +21,7 @@
 
 <body>
   <header>
-    <nav class="ka-activeRM">
+    <nav class="">
       <div class="ka-logo">
         <a href="index.html">
           <img src="./img/logo/logo-white.png" />
@@ -35,7 +35,7 @@
           </a>
           <div class="ka-popup"></div>
         </li>
-        <li class="ka-menu-btn ka-activeRM">
+        <li class="ka-menu-btn ">
           <a class="ka-fC ka-fAI-center" href="#">
             <span class="lnr lnr-menu ka-mR10"></span>
             <div>MENU</div>
@@ -253,7 +253,7 @@
             $('.owl-item .item').each(function () {
               var attr = $(this).attr('data-videosrc');
               if (typeof attr !== typeof undefined && attr !== false) {
-                console.log('hit');
+                // console.log('hit');
                 var videosrc = $(this).attr('data-videosrc');
                 $(this).prepend('<video muted><source src="' + videosrc + '" type="video/mp4"></video>');
               }
@@ -455,65 +455,65 @@
           <div>
             <ul class="ka-letter-child">
               <li class="ka-item">
-                <div class="ka-img-wrap">
-                  <div class="ka-square-wrap">
-                    <div class="ka-square">
-                      <img src="./img/newsLetter/letter-02.jpg" />
+                <div class="ka-fCol1-2">
+                  <div class="ka-col ka-p10">
+                    <div class="ka-img-wrap">
+                      <div>
+                        <img src="./img/bg/bg-support.jpg" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="ka-content">
-                  <div class="ka-date">
-                    <div>
-                      <span class="lnr lnr-calendar-full ka-mR5"></span>
-                      <span>06.Mar.2018</span>
+                  <div class="ka-col ka-p10">
+                    <div class="ka-cl-grey2-el ka-mB15">
+                      <span class="lnr lnr-calendar-full ka-mR5 ka-cl-orange-el"></span>
+                      <span class="ka-fUpper ka-mR5">06.Mar.2018</span>
+                      <div class="ka-info">information</div>
                     </div>
-                    <div class="ka-info">information</div>
+                    <h3 class="ka-title ka-mB10">Lorem ipsum dolor sit amet</h3>
+                    <p class="ka-p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
                   </div>
-                  <h3>Lorem ipsum dolor sit amet</h3>
-                  <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
                 </div>
               </li>
               <li class="ka-item">
-                <div class="ka-img-wrap">
-                  <div class="ka-square-wrap">
-                    <div class="ka-square">
-                      <img src="./img/newsLetter/letter-02.jpg" />
+                  <div class="ka-fCol1-2">
+                    <div class="ka-col ka-p10">
+                      <div class="ka-img-wrap">
+                        <div>
+                          <img src="./img/bg/bg-support.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ka-col ka-p10">
+                      <div class="ka-cl-grey2-el ka-mB15">
+                        <span class="lnr lnr-calendar-full ka-mR5 ka-cl-orange-el"></span>
+                        <span class="ka-fUpper ka-mR5">06.Mar.2018</span>
+                        <div class="ka-info">information</div>
+                      </div>
+                      <h3 class="ka-title ka-mB10">Lorem ipsum dolor sit amet</h3>
+                      <p class="ka-p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
                     </div>
                   </div>
-                </div>
-                <div class="ka-content">
-                  <div class="ka-date">
-                    <div>
-                      <span class="lnr lnr-calendar-full ka-mR5"></span>
-                      <span>06.Mar.2018</span>
+                </li>
+                <li class="ka-item">
+                    <div class="ka-fCol1-2">
+                      <div class="ka-col ka-p10">
+                        <div class="ka-img-wrap">
+                          <div>
+                            <img src="./img/bg/bg-support.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ka-col ka-p10">
+                        <div class="ka-cl-grey2-el ka-mB15">
+                          <span class="lnr lnr-calendar-full ka-mR5 ka-cl-orange-el"></span>
+                          <span class="ka-fUpper ka-mR5">06.Mar.2018</span>
+                          <div class="ka-info">information</div>
+                        </div>
+                        <h3 class="ka-title ka-mB10">Lorem ipsum dolor sit amet</h3>
+                        <p class="ka-p">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                      </div>
                     </div>
-                    <div class="ka-info">information</div>
-                  </div>
-                  <h3>Lorem ipsum dolor sit amet</h3>
-                  <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                </div>
-              </li>
-              <li class="ka-item">
-                <div class="ka-img-wrap">
-                  <div class="ka-square-wrap">
-                    <div class="ka-square">
-                      <img src="./img/newsLetter/letter-02.jpg" />
-                    </div>
-                  </div>
-                </div>
-                <div class="ka-content">
-                  <div class="ka-date">
-                    <div>
-                      <span class="lnr lnr-calendar-full ka-mR5"></span>
-                      <span>06.Mar.2018</span>
-                    </div>
-                    <div class="ka-info">information</div>
-                  </div>
-                  <h3>Lorem ipsum dolor sit amet</h3>
-                  <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                </div>
-              </li>
+                  </li>
             </ul>
           </div>
         </div>

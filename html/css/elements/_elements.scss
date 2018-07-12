@@ -209,6 +209,7 @@ $size-icon6:12px;
 }
 
 .ka-info {
+  display: inline-block;
   background-color: $blue;
   color: white;
   padding: 0 10px;
@@ -277,9 +278,12 @@ $size-icon6:12px;
 
 .ka-link-btn {
   display: block; // color: $colorMain;
+  @extend %ka-fC;
   color: $blue;
   text-decoration: none;
   .lnr {
+    position: relative;
+    top: 4px;
     margin-right: 5px;
   }
   &:hover {
@@ -312,6 +316,13 @@ $size-icon6:12px;
       ms-transform: translateX(-50%);
       transform: translateX(-50%);
     }
+  }
+}
+
+.ka-img-wrap {
+  @extend %ka-img-wrap;
+  &:before {
+    padding-top: 100%;
   }
 }
 

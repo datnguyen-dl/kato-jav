@@ -338,13 +338,15 @@ h2,
 h3,
 h4 {
   font-weight: normal; }
-  h1.ka-title,
-  h2.ka-title,
-  h3.ka-title,
-  h4.ka-title {
-    margin: 0;
-    padding: 0px;
-    line-height: 1.2; }
+
+.ka-title {
+  margin: 0;
+  padding: 0px;
+  line-height: 1.3; }
+
+.ka-p {
+  margin: 0;
+  padding: 0px; }
 
 .ka-tCenter {
   text-align: center; }
@@ -567,6 +569,7 @@ textarea, .ka-fsRob {
     right: 0; }
 
 .ka-info {
+  display: inline-block;
   background-color: #156eaa;
   color: white;
   padding: 0 10px;
@@ -620,25 +623,27 @@ textarea, .ka-fsRob {
   color: #156eaa;
   text-decoration: none; }
   .ka-link-btn .lnr {
+    position: relative;
+    top: 4px;
     margin-right: 5px; }
   .ka-link-btn:hover {
     color: #ffb116; }
 
-.ka-img-wrap5, .ka-img-wrap6 {
+.ka-img-wrap, .ka-img-wrap5, .ka-img-wrap6 {
   position: relative;
   width: 100%;
   overflow: hidden; }
-  .ka-img-wrap5:before, .ka-img-wrap6:before {
+  .ka-img-wrap:before, .ka-img-wrap5:before, .ka-img-wrap6:before {
     content: "";
     display: block; }
-  .ka-img-wrap5 > div, .ka-img-wrap6 > div {
+  .ka-img-wrap > div, .ka-img-wrap5 > div, .ka-img-wrap6 > div {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden; }
-    .ka-img-wrap5 > div img, .ka-img-wrap6 > div img {
+    .ka-img-wrap > div img, .ka-img-wrap5 > div img, .ka-img-wrap6 > div img {
       min-width: 100%;
       height: 100%;
       display: block;
@@ -647,6 +652,9 @@ textarea, .ka-fsRob {
       -webkit-transform: translateX(-50%);
       ms-transform: translateX(-50%);
       transform: translateX(-50%); }
+
+.ka-img-wrap:before {
+  padding-top: 100%; }
 
 .ka-img-wrap5:before {
   padding-top: 55%; }
@@ -657,7 +665,7 @@ textarea, .ka-fsRob {
 .ka-hover-bg-dark:hover {
   background-color: rgba(0, 0, 0, 0.04); }
 
-.ka-title-set, .ka-fC-mob, .ka-fC, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-fCol2-1, .ka-fCol1-2, .ka-fCol3-2, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, .ks-slider .owl-carousel .owl-dots, .ka-enrol, .ka-location > .ka-content, .ka-location > .ka-content .ka-image, .ka-support > .ka-content .ka-box-wrap, .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-group-btn, .ka-letter > .ka-content .ka-list-letter, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav, header > nav > .ka-menu, header > nav > .ka-menu > li > .ka-popup > .ka-content, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items > li, .ka-contact-bar, .ka-contact-bar a,
+.ka-title-set, .ka-link-btn, .ka-fC-mob, .ka-fC, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-fCol2-1, .ka-fCol1-2, .ka-fCol3-2, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, .ks-slider .owl-carousel .owl-dots, .ka-enrol, .ka-location > .ka-content, .ka-location > .ka-content .ka-image, .ka-support > .ka-content .ka-box-wrap, .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-group-btn, .ka-letter > .ka-content .ka-list-letter, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, header > nav, header > nav > .ka-menu, header > nav > .ka-menu > li > .ka-popup > .ka-content, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items > li, .ka-contact-bar, .ka-contact-bar a,
 .ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tabs-style > .ka-content > ul > li, .ka-tabs-style > .ka-content > ul > li > div, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-local-page .ka-group-btn > .ka-content, .ka-tab-wrap .ka-tab-btn, .ka-local-info .ka-content, .ka-local-info .ka-content > div:nth-child(1) > ul {
   display: -webkit-box;
   display: -moz-box;
@@ -733,12 +741,12 @@ textarea, .ka-fsRob {
   flex-wrap: nowrap;
   -ms-flex-wrap: none; }
 
-.ka-fWrap, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav > .ka-menu, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-bottom > .ka-content .ka-list-link, .ka-tabs-style > .ka-content > ul > li {
+.ka-fWrap, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, header > nav > .ka-menu, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-bottom > .ka-content .ka-list-link, .ka-tabs-style > .ka-content > ul > li {
   -moz-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.ka-title-set div, .ka-fOne, .ka-fCol2-1 .ka-col:nth-child(2), .ka-fCol1-2 .ka-col:nth-child(1), .ka-orange-btn > div > div, .ka-white-btn > div > div, .ka-enrol div:nth-child(1), .ka-location > .ka-content .ka-text, .ka-location > .ka-content .ka-image, .ka-location > .ka-content .ka-image a, .ka-support > .ka-content .ka-box-wrap .ka-box, .ka-letter > .ka-content .ka-list-letter > div, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content, header > nav > .ka-logo, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-contact-bar a,
+.ka-title-set div, .ka-fOne, .ka-fCol2-1 .ka-col:nth-child(2), .ka-fCol1-2 .ka-col:nth-child(1), .ka-orange-btn > div > div, .ka-white-btn > div > div, .ka-enrol div:nth-child(1), .ka-location > .ka-content .ka-text, .ka-location > .ka-content .ka-image, .ka-location > .ka-content .ka-image a, .ka-support > .ka-content .ka-box-wrap .ka-box, .ka-letter > .ka-content .ka-list-letter > div, header > nav > .ka-logo, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-contact-bar a,
 .ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a > div, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-local-page .ka-group-btn > .ka-content > .ka-item, .ka-tab-wrap .ka-tab-btn > li, .ka-local-info .ka-content > div:nth-child(1) > ul > li, .ka-local-info .ka-content > div:nth-child(2) {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -769,7 +777,7 @@ textarea, .ka-fsRob {
   align-self: center;
   -ms-align-self: center; }
 
-.ka-title-set, .ka-fAI-center, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date, header > nav, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-tab-wrap .ka-tab-btn {
+.ka-title-set, .ka-fAI-center, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, header > nav, header > nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-tab-wrap .ka-tab-btn {
   -moz-align-items: center;
   -webkit-align-items: center;
   align-items: center;
@@ -831,6 +839,9 @@ button {
   cursor: pointer; }
   button:focus {
     outline: none; }
+
+.ka-link {
+  color: #ffb116; }
 
 .ka-scroll-btn {
   position: absolute;
@@ -1459,38 +1470,7 @@ content {
         .ka-letter > .ka-content .ka-list-letter .ka-letter-main:hover {
           background-color: rgba(0, 0, 0, 0.09); }
       .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item {
-        padding: 20px; }
-        .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item .ka-img-wrap {
-          width: 20%;
-          min-width: 150px; }
-          .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item .ka-img-wrap .ka-square-wrap {
-            position: relative;
-            width: 100%;
-            overflow: hidden; }
-            .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item .ka-img-wrap .ka-square-wrap:before {
-              content: "";
-              display: block;
-              padding-top: 100%; }
-            .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item .ka-img-wrap .ka-square-wrap .ka-square img {
-              display: block;
-              min-width: 100%;
-              height: 100%; }
-        .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content {
-          padding-left: 30px; }
-          .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date {
-            color: rgba(0, 0, 0, 0.45); }
-            .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date .lnr {
-              color: #ffb116; }
-            .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content .ka-date div {
-              margin-right: 10px; }
-          .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content h2 {
-            color: #156eaa; }
-          .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content h2,
-          .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content p {
-            margin: 0;
-            margin-bottom: 10px; }
-          .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item > .ka-content h2 {
-            line-height: 26px; }
+        padding: 10px; }
         .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item:hover {
           background-color: rgba(0, 0, 0, 0.09); }
 
@@ -1507,7 +1487,7 @@ header {
     header > nav > .ka-logo {
       padding: 0 40px; }
       header > nav > .ka-logo a {
-        display: block; }
+        display: inline-block; }
         header > nav > .ka-logo a img {
           height: 40px; }
     header > nav > .ka-menu > li {
@@ -1524,7 +1504,7 @@ header {
       header > nav > .ka-menu > li > .ka-popup {
         display: none;
         position: fixed;
-        top: 68px;
+        top: 67px;
         right: 0;
         bottom: 0;
         left: 0;

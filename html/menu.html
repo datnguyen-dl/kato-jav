@@ -7,7 +7,7 @@
   <meta name="keywords" content="education">
   <meta name="author" content="DATTANNGUYEN">
   <title>Education</title>
-  <script src="../js/fontsize.js?v=1"></script>
+  
   <link rel="stylesheet" type="text/css" href="./css/index.css?v=1">
   <!-- Owl Stylesheets -->
   <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
@@ -253,7 +253,7 @@
             $('.owl-item .item').each(function () {
               var attr = $(this).attr('data-videosrc');
               if (typeof attr !== typeof undefined && attr !== false) {
-                console.log('hit');
+                // console.log('hit');
                 var videosrc = $(this).attr('data-videosrc');
                 $(this).prepend('<video muted><source src="' + videosrc + '" type="video/mp4"></video>');
               }

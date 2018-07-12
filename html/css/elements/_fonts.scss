@@ -70,11 +70,17 @@ h2,
 h3,
 h4 {
   font-weight: normal;
-  &.ka-title {
-    margin: 0;
-    padding: 0px;
-    line-height: 1.2;
-  }
+}
+
+.ka-title {
+  margin: 0;
+  padding: 0px;
+  line-height: 1.3;
+}
+
+.ka-p {
+  margin: 0;
+  padding: 0px;
 }
 
 //TEXT-ALIGN========================

@@ -14,7 +14,7 @@ header {
       @extend %ka-fOne;
       padding: 0 40px;
       a {
-        display: block;
+        display: inline-block;
         img {
           height: 40px;
         }
@@ -39,7 +39,7 @@ header {
         &>.ka-popup {
           display: none;
           position: fixed;
-          top: 68px;
+          top: 67px;
           right: 0;
           bottom: 0;
           left: 0;
