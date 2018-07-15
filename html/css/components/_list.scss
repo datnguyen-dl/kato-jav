@@ -1,0 +1,44 @@
+.ka-list-expand {
+  @extend %ka-ul;
+  &>li {
+    display: block;
+    border-top: 1px solid $grey6;
+    &:last-child {
+      border-bottom: 1px solid $grey6;
+    }
+    &>a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-decoration: none;
+      color: $colorMain;
+      @extend %ka-fC;
+      @extend %ka-fAI-center;
+      &>div {
+        @extend %ka-fOne;
+        font-weight: 500;
+      }
+      &>span {
+        font-size: 32px;
+        color: $orange;
+      }
+    }
+    &>.ka-content-expand {
+      display: none;
+    }
+    &:hover {
+      &>a {
+        color: $blue;
+      }
+    }
+    &.ka-active {
+      &>a {
+        color: $blue;
+        font-size: 20px;
+      }
+      &>.ka-content-expand {
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

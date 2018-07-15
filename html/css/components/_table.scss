@@ -1,0 +1,32 @@
+.ka-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  &>thead {
+    &>tr {
+      &>th {
+        border: 1px solid $white1;
+        padding: 20px;
+        background-color: $blue;
+        color: white;
+      }
+    }
+  }
+  &>tbody {
+    &>tr {
+      &>td {
+        border: 1px solid $grey6;
+        padding: 15px 20px;
+      }
+      &:nth-child(even){
+        &>td{
+          background-color: rgb(248, 248, 255);
+        }
+      }
+      &:hover{
+        &>td{
+          background-color: rgb(240, 240, 255);
+        }
+      }
+    }
+  }
+}

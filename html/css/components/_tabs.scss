@@ -1,0 +1,25 @@
+.ka-tab-scroll {
+  &>li {
+    &>a {
+      @extend %ka-fC;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $orange;
+      background-color: white;
+      color: $orange;
+      text-decoration: none;
+      align-items: center;
+      span {
+        padding: 10px 20px;
+      }
+      .lnr{
+        font-size: 20px;
+        font-weight: 600;
+      }
+      &:hover{
+        background-color: $orange;
+        color: white;
+      }
+    }
+  }
+}

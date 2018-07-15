@@ -72,24 +72,20 @@ button {
   text-decoration: none;
   line-height: 24px;
   border: 2px solid #333;
+  font-weight: 600;
   &>div {
     @extend %ka-fC;
     @extend %ka-fAI-center;
     &>div {
-      padding: 10px 20px;
+      padding: 15px 20px;
       @extend %ka-fOne;
       text-align: left;
     }
-    .ka-arrow-right {
-      margin-right: 20px;
-      margin-left: 20px;
+    span,i {
+      padding: 15px 20px;
       display: block;
-      min-width: 32px;
-      min-height: 32px;
-      background-image: url(../img/icons/color/arrow-orange-icon.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      font-size: 20px;
+      font-weight: 600;
     }
   }
   &.ka-big {

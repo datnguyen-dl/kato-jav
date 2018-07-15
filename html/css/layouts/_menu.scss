@@ -1,152 +1,153 @@
 header {
   position: relative;
   z-index: 8;
-  &>nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    @extend %ka-fC;
-    @extend %ka-fAI-center;
-    z-index: 99;
-    &>.ka-logo {
-      @extend %ka-fOne;
-      padding: 0 40px;
-      a {
-        display: inline-block;
-        img {
-          height: 40px;
-        }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  @extend %ka-fC;
+  @extend %ka-fAI-center;
+  z-index: 99;
+  &>.ka-logo {
+    @extend %ka-fOne;
+    padding: 0 40px;
+    a {
+      display: inline-block;
+      img {
+        height: 40px;
       }
     }
-    &>.ka-menu {
-      @extend %ka-fC;
-      @extend %ka-fWrap;
-      &>li {
-        padding: 15px 10px; // min-height: 65px;
+  }
+  &>.ka-menu {
+    @extend %ka-fC;
+    @extend %ka-fWrap;
+    &>li {
+      padding: 15px 10px; // min-height: 65px;
+      padding-right: 20px;
+      &>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
         padding-right: 20px;
-        &>a {
-          padding-top: 5px;
-          padding-bottom: 5px;
-          padding-left: 20px;
-          padding-right: 20px;
-          font-size: 16px;
-          &:hover {
-            opacity: 0.8;
-          }
+        font-size: 16px;
+        &:hover {
+          opacity: 0.8;
         }
-        &>.ka-popup {
-          display: none;
-          position: fixed;
-          top: 67px;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          padding-bottom: 60px;
-          z-index: 999;
-          &>.ka-content {
+      }
+      &>.ka-popup {
+        display: none;
+        position: fixed;
+        top: 67px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 95vh;
+        padding-bottom: 60px;
+        z-index: 999;
+        &>.ka-content {
+          @extend %ka-fC;
+          overflow-y: auto;
+          height: 100%;
+          padding: 20px;
+          background-color: #212121;
+          .ka-list-items {
             @extend %ka-fC;
-            overflow-y: auto;
-            height: 100%;
-            padding: 20px;
-            background-color: #212121;
-            .ka-list-items {
-              @extend %ka-fC;
-              @extend %ka-fOne;
-              @extend %ka-fWrap;
-              @extend %ka-ul;
-              &>li {
-                // max-width: 300px;
-                // width: 100%;
-                margin-bottom: 10px;
-                &>.ka-piece {
-                  padding: 20px;
-                  &>a {
+            @extend %ka-fOne;
+            @extend %ka-fWrap;
+            @extend %ka-ul;
+            &>li {
+              // max-width: 300px;
+              // width: 100%;
+              margin-bottom: 10px;
+              &>.ka-piece {
+                padding: 20px;
+                &>a {
+                  @extend %ka-fC;
+                  @extend %ka-fAI-center;
+                  color: $orange;
+                  font-weight: 400;
+                  .lnr {
+                    margin-right: 10px;
+                  } // i {
+                  //   width: 24px;
+                  //   height: 24px;
+                  //   background-repeat: no-repeat;
+                  //   background-position: center;
+                  //   background-size: cover;
+                  //   margin-right: 5px;
+                  // }
+                  h3 {
+                    margin: 0;
+                    padding: 0;
+                    text-transform: uppercase;
+                  }
+                }
+                &:hover {
+                  background-color: $grey6;
+                }
+                &>.ka-list-child-items {
+                  @extend %ka-ul;
+                  padding-top: 10px;
+                  &>li {
                     @extend %ka-fC;
-                    @extend %ka-fAI-center;
-                    color: $orange;
-                    font-weight: 400;
-                    .lnr{
+                    padding: 10px 20px;
+                    &::before {
+                      content: '';
+                      position: relative;
+                      top: 10px;
+                      display: block;
+                      width: 5px;
+                      height: 5px;
                       margin-right: 10px;
+                      background-color: $orange;
                     }
-                    // i {
-                    //   width: 24px;
-                    //   height: 24px;
-                    //   background-repeat: no-repeat;
-                    //   background-position: center;
-                    //   background-size: cover;
-                    //   margin-right: 5px;
-                    // }
-                    h3 {
-                      margin: 0;
-                      padding: 0;
-                      text-transform: uppercase;
-                    }
-                  }
-                  &:hover {
-                    background-color: $grey6;
-                  }
-                  &>.ka-list-child-items {
-                    @extend %ka-ul;
-                    padding-top: 10px;
-                    &>li {
-                      @extend %ka-fC;
-                      padding: 10px 20px;
-                      &::before {
-                        content: '';
-                        position: relative;
-                        top: 10px;
-                        display: block;
-                        width: 5px;
-                        height: 5px;
-                        margin-right: 10px;
-                        background-color: $orange;
-                      }
-                      &:hover {
-                        background-color: $grey6;
-                      }
+                    &:hover {
+                      background-color: $grey6;
                     }
                   }
                 }
               }
-              &:after {
-                content: '';
-                display: block;
-                clear: both;
-              }
+            }
+            &:after {
+              content: '';
+              display: block;
+              clear: both;
             }
           }
         }
-        &.ka-active {
-          &.ka-menu-btn {
-            background-color: #212121;
-          }
-          &>.ka-popup {
-            display: block;
-          }
+      }
+      &.ka-active {
+        &.ka-menu-btn {
+          background-color: #212121;
+        }
+        &>.ka-popup {
+          display: block;
         }
       }
-      &:after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-      .ka-br {
-        border: 1px solid white;
-      }
     }
-    ul {
-      @extend %ka-ul;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
     }
-    a {
-      color: white;
-      text-decoration: none;
+    .ka-br {
+      border: 1px solid white;
     }
-    &:hover,
-    &.ka-active {
-      background-color: $orange;
-    }
+  }
+  ul {
+    @extend %ka-ul;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  &:hover,
+  &.ka-active {
+    background-color: $orange;
   }
 }

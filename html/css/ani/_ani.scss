@@ -45,163 +45,88 @@
   animation-fill-mode: both;
 }
 
-//BOUNCEIN=======================
-@keyframes bounceIn {
-  from,
-  20%,
-  40%,
-  to {
-    animation-timing-function: cubic-bezier(0.215, 0.610);
-  }
-  0% {
-    opacity: 0;
-    transform: scale3d(1, 1, 1);
-  }
-  20% {
-    opacity: 1;
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  40% {
-    transform: scale3d(1, 1, 1);
-  }
-  to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.bounceIn {
-  animation-name: bounceIn;
-}
-
-// ani modal==========================
-@keyframes aniModal {
-  0% {
-    left: 0%;
-    opacity: 0;
-  }
-  100% {
-    left: 50%;
-    opacity: 1;
-  }
-}
-
-.aniModal {
-  animation-name: aniModal;
-}
-
-// ani popup mini==========================
-@keyframes aniPopupBottom {
-  0% {
-    opacity: 0;
-    bottom: 6px;
-  }
-  100% {
-    opacity: 1;
-    bottom: -6px;
-  }
-}
-
-.ka-popup-bottom-el {
-  .aniPopup {
-    animation-name: aniPopupBottom;
-  }
-}
-
-@keyframes aniPopupTop {
-  0% {
-    opacity: 0;
-    top: 6px;
-  }
-  100% {
-    opacity: 1;
-    top: -6px;
-  }
-}
-
-.ka-popup-top-el {
-  .aniPopup {
-    animation-name: aniPopupTop;
-  }
-}
-
 // ==========================
-// animation loading
-.lds-ellipsis {
-  display: block;
+.ka-landing-ani {
+  display: none;
+}
+
+.ka-bg-main {
+  position: fixed;
+  top: 300px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg/bg-main.png);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.ka-bg-ani {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 32px;
-  height: 32px;
-  
-}
-
-.lds-ellipsis div {
-  position: absolute;
-  top: 13px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: $green;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-
-.lds-ellipsis div:nth-child(1) {
-  left: 0%;
-  animation: lds-ellipsis1 0.6s infinite;
-}
-
-.lds-ellipsis div:nth-child(2) {
-  left: 0%;
-  animation: lds-ellipsis2 0.6s infinite;
-}
-
-.lds-ellipsis div:nth-child(3) {
-  left: calc(50% - 3px);
-  animation: lds-ellipsis2 0.6s infinite;
-}
-
-.lds-ellipsis div:nth-child(4) {
-  left: calc(100% - 6px);
-  animation: lds-ellipsis4 0.6s infinite;
-}
-
-@keyframes lds-ellipsis1 {
-  0% {
-    transform: scale(0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  // overflow: hidden;
+  .ka-bg1,.ka-bg2,.ka-bg3,.ka-bg4,.ka-bg5,.ka-bg6{
+    position: absolute;
+    img{
+      display: block;
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
 
-@keyframes lds-ellipsis4 {
-  0% {
-    transform: scale(1);
+  .ka-bg1{
+    top: -10vw;
+    left: 35vw;
+    opacity: 0.7;
+    img{
+      width: 30vw;
+    }
   }
-  100% {
-    transform: scale(0);
+  .ka-bg2{
+    bottom: -20vw;
+      left: -30vw;
+      opacity: 0.4;
+    img{
+      width: 25vw;
+    }
   }
-}
+  .ka-bg3{
+    top: -50vw;
+    left: 2vw;
+    opacity: 0.5;
+    img{
+      width: 26vw;
+    }
+  }
+  .ka-bg4{
+    bottom: -18vw;
+    right: -10vw;
+    opacity: 0.8;
+    img{
+      width: 22vw;
+    }
+  }
+  .ka-bg5{
+    top: 10vw;
+    left: -25vw;
+    opacity: 0.5;
+    img{
+      width: 25vw;
+    }
+  }
+  .ka-bg6{
+    bottom: 18px;
+    right: 40vw;
+    opacity: 0.2;
+    img{
+      width: 18vw;
+    }
+  }
+ 
 
-// @keyframes lds-ellipsis2 {
-//   0% {
-//     transform: translate(0, 0);
-//   }
-//   100% {
-//     transform: translate(50%, 0);
-//   }
-// }
-
-@keyframes lds-ellipsis2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(11px, 0);
-  }
 }

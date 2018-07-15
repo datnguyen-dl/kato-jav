@@ -1,7 +1,7 @@
 .ka-fCol2 {
   @extend %ka-fC;
   @extend %ka-fWrap;
-  .ka-col {
+  &>.ka-col {
     width: 50%;
     @media (max-width: 960px) {
       // width: 50%;
@@ -15,7 +15,7 @@
 .ka-fCol3 {
   @extend %ka-fC;
   @extend %ka-fWrap;
-  .ka-col {
+  &>.ka-col {
     width: 33.33%;
     @media (max-width: 960px) {
       width: 50%;
@@ -29,7 +29,7 @@
 .ka-fCol4 {
   @extend %ka-fC;
   @extend %ka-fWrap;
-  .ka-col {
+  &>.ka-col {
     width: 25%;
     @media (max-width: 960px) {
       width: 33%;
@@ -45,7 +45,7 @@
 
 .ka-fCol2-1 {
   @extend %ka-fC;
-  .ka-col {
+  &>.ka-col {
     &:nth-child(1) {
       @extend %ka-fTwo;
     }
@@ -61,7 +61,7 @@
 
 .ka-fCol1-2 {
   @extend %ka-fC;
-  .ka-col {
+  &>.ka-col {
     &:nth-child(1) {
       @extend %ka-fOne;
     }
@@ -76,7 +76,7 @@
 
 .ka-fCol3-2 {
   @extend %ka-fC;
-  .ka-col {
+  &>.ka-col {
     &:nth-child(1) {
       @extend %ka-fThree;
     }

@@ -34,7 +34,7 @@ footer {
 
 %ka-contact-bar {
   @extend %ka-fC;
-  padding: 60px 0px;
+  padding: 60px 40px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -53,7 +53,7 @@ footer {
     color: white;
     font-size: 20px;
     @media (max-width: 768px) {
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-bottom: 20px;
       }
     }
@@ -66,7 +66,6 @@ footer {
 
 .ka-contact-bar {
   @extend %ka-contact-bar;
-  
   .ka-apply-btn {
     background-color: $orange;
     &:hover {
@@ -169,7 +168,7 @@ footer {
       a {
         display: block;
         img {
-          height: 40px;
+          height: 100px;
         }
       }
     }
@@ -181,6 +180,9 @@ footer {
       &>.ka-item {
         min-width: 250px;
         width: 33.33%;
+        @media (max-width: 1024px) {
+          width: 50%;
+        }
         a {
           @extend %ka-fC;
           padding: 15px 30px;
