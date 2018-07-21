@@ -5,7 +5,7 @@ $size-icon4:16px;
 $size-icon5:14px;
 $size-icon6:12px;
 %ka-fsRob {
-  font-family: 'Roboto', sans-serif; //font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Roboto', 'Mplus 1p', sans-sesans-serif; //font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .ka-fsRob {
@@ -223,15 +223,11 @@ $size-icon6:12px;
   border-left: 3px solid $orange;
   @extend %ka-fC;
   @extend %ka-fAI-center;
-  @extend %w-normal;
   i {
     position: relative;
     z-index: 1;
-    width: 64px;
-    height: 64px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    width: 72px !important;
+    height: 72px !important;
     margin-right: 20px;
   }
   .ka-facebook-icon {
@@ -266,7 +262,7 @@ $size-icon6:12px;
 
 .ka-list-row {
   @extend %ka-ul;
-  @extend %w-normal;
+  // @extend %w-normal;
   &>li {
     padding: 20px;
     border-bottom: 1px solid $grey6;

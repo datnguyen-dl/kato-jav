@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:100,200,300,400,700,900");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/earlyaccess/mplus1p.css");
 @import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
 body,
 input,
@@ -8,7 +9,7 @@ input[type="search"],
 input[type="number"],
 input[type="password"],
 input[type="email"] {
-  font-size: 17px; }
+  font-size: 1.15rem; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -23,7 +24,7 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  line-height: 1.6; }
+  line-height: 1.8; }
 
 body,
 input,
@@ -45,7 +46,16 @@ textarea {
   background-color: #F5F5F5; }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #333333; }
+  background-color: #d4d4d4; }
+
+content,
+section,
+article {
+  display: block; }
+  content:focus,
+  section:focus,
+  article:focus {
+    outline: none; }
 
 .ka-cl-white1-el {
   color: white; }
@@ -431,6 +441,44 @@ h4 {
 .ka-fs7 {
   font-size: 7px; }
 
+.ka-intro-japan-icon, .ka-intro-employment-icon, .ka-qualification-icon, .ka-scholarship-icon, .ka-house-icon, .ka-intro-japan-icon.ka-color, .ka-intro-employment-icon.ka-color, .ka-qualification-icon.ka-color, .ka-scholarship-icon.ka-color, .ka-house-icon.ka-color, .ka-facebook-icon, .ka-twitter-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ka-intro-japan-icon {
+  background-image: url("../img/icons/white/intro_japan.png"); }
+
+.ka-intro-employment-icon {
+  background-image: url("../img/icons/white/intro_employment.png"); }
+
+.ka-qualification-icon {
+  background-image: url("../img/icons/white/qualification.png"); }
+
+.ka-scholarship-icon {
+  background-image: url("../img/icons/white/scholarship.png"); }
+
+.ka-house-icon {
+  background-image: url("../img/icons/white/house.png"); }
+
+.ka-intro-japan-icon.ka-color {
+  background-image: url("../img/icons/color/intro_japan.png"); }
+
+.ka-intro-employment-icon.ka-color {
+  background-image: url("../img/icons/color/intro_employment.png"); }
+
+.ka-qualification-icon.ka-color {
+  background-image: url("../img/icons/color/qualification.png"); }
+
+.ka-scholarship-icon.ka-color {
+  background-image: url("../img/icons/color/scholarship.png"); }
+
+.ka-house-icon.ka-color {
+  background-image: url("../img/icons/color/house.png"); }
+
 .ka-facebook-icon {
   background-image: url("../img/icons/color/facebook-icon.png"); }
 
@@ -440,7 +488,7 @@ h4 {
 body,
 input,
 textarea, .ka-fsRob {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', 'Mplus 1p', sans-sesans-serif; }
 
 .ka-fLeft {
   float: left; }
@@ -583,11 +631,8 @@ textarea, .ka-fsRob {
   .ka-title-set i {
     position: relative;
     z-index: 1;
-    width: 64px;
-    height: 64px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    width: 72px !important;
+    height: 72px !important;
     margin-right: 20px; }
   .ka-title-set .ka-facebook-icon {
     background-image: url(../img/icons/color/facebook-icon.png); }
@@ -666,7 +711,7 @@ textarea, .ka-fsRob {
   background-color: rgba(0, 0, 0, 0.04); }
 
 .ka-title-set, .ka-link-btn, .ka-fC-mob, .ka-fC, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-fCol2-1, .ka-fCol1-2, .ka-fCol3-2, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, .ks-slider .owl-carousel .owl-dots, .ka-list-expand > li > a, .ka-tab-scroll > li > a, .ka-enrol, .ka-location > .ka-content .ka-image, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, nav, nav > .ka-menu, nav > .ka-menu > li > .ka-popup > .ka-content, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items > li, .ka-contact-bar, .ka-contact-bar a,
-.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tabs-style > .ka-content > ul > li, .ka-tabs-style > .ka-content > ul > li > div, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-local-page .ka-group-btn > .ka-content, .ka-tab-wrap .ka-tab-btn, .ka-local-info .ka-content, .ka-local-info .ka-content > div:nth-child(1) > ul {
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tabs-style > .ka-content > ul > li, .ka-tabs-style > .ka-content > ul > li > .ka-btn, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-local-page .ka-group-btn > .ka-content, .ka-tab-wrap .ka-tab-btn, .ka-local-info .ka-content, .ka-local-info .ka-content > div:nth-child(1) > ul {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1154,12 +1199,14 @@ textarea {
   background-color: white;
   color: #ffb116;
   text-decoration: none;
-  align-items: center; }
+  align-items: center;
+  line-height: 1.4; }
   .ka-tab-scroll > li > a span {
     padding: 10px 20px; }
   .ka-tab-scroll > li > a .lnr {
     font-size: 20px;
-    font-weight: 600; }
+    font-weight: 600;
+    padding-right: 0; }
   .ka-tab-scroll > li > a:hover {
     background-color: #ffb116;
     color: white; }
@@ -1208,10 +1255,6 @@ body {
 .ka-suf {
   right: 0; }
 
-content,
-section {
-  display: block; }
-
 .section {
   position: relative; }
 
@@ -1225,13 +1268,13 @@ content {
   width: 100%;
   margin: 0 auto; }
 
-.ka-title-set, .ka-list-row, .w-normal, .ka-tabs-style > .ka-content, .ka-local-page .ka-group-btn > .ka-content, .ka-tab-wrap, .ka-local-info .ka-content {
+.w-normal, .ka-tabs-style > .ka-content, .ka-local-page .ka-group-btn > .ka-content, .ka-local-info .ka-content {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
 
-.w-small {
-  max-width: 960px;
+.w-small, .ka-contact-bar {
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto; }
 
@@ -1633,8 +1676,6 @@ footer {
 
 .ka-contact-bar {
   padding: 60px 40px;
-  max-width: 1200px;
-  width: 100%;
   margin: 0 auto; }
   @media (max-width: 768px) {
     .ka-contact-bar {
@@ -1820,36 +1861,46 @@ footer {
   .ka-tabs-style > .ka-content {
     padding: 60px 20px; }
     .ka-tabs-style > .ka-content > ul > li {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
       padding: 20px 0; }
-      .ka-tabs-style > .ka-content > ul > li:last-child {
-        border: 0; }
-      .ka-tabs-style > .ka-content > ul > li > div {
+      .ka-tabs-style > .ka-content > ul > li > .ka-btn {
         min-width: 200px;
         width: 20%;
-        border-right: 1px solid rgba(255, 255, 255, 0.09); }
-        .ka-tabs-style > .ka-content > ul > li > div:last-child {
-          border: 0; }
-        .ka-tabs-style > .ka-content > ul > li > div .ka-btn {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        text-align: center; }
+        .ka-tabs-style > .ka-content > ul > li > .ka-btn:last-child > .ka-content:before {
+          display: none; }
+        .ka-tabs-style > .ka-content > ul > li > .ka-btn > .ka-content {
           display: block;
+          padding: 10px;
           width: 100%;
-          padding: 20px;
-          color: white;
-          text-decoration: none;
-          text-align: center; }
-          .ka-tabs-style > .ka-content > ul > li > div .ka-btn i {
-            display: inline-block;
-            width: 64px;
-            height: 64px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover; }
-          .ka-tabs-style > .ka-content > ul > li > div .ka-btn .ka-facebook-icon {
-            background-image: url(../img/icons/color/facebook-icon.png); }
-          .ka-tabs-style > .ka-content > ul > li > div .ka-btn p {
+          position: relative; }
+          .ka-tabs-style > .ka-content > ul > li > .ka-btn > .ka-content i {
+            width: 90px;
+            height: 90px; }
+          .ka-tabs-style > .ka-content > ul > li > .ka-btn > .ka-content p {
             margin: 0; }
-          .ka-tabs-style > .ka-content > ul > li > div .ka-btn:hover, .ka-tabs-style > .ka-content > ul > li > div .ka-btn.ka-active {
-            background-color: #ffb116; }
+          .ka-tabs-style > .ka-content > ul > li > .ka-btn > .ka-content:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -10px;
+            width: 1px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.09); }
+          .ka-tabs-style > .ka-content > ul > li > .ka-btn > .ka-content:after {
+            content: '';
+            display: none;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.09); }
+        .ka-tabs-style > .ka-content > ul > li > .ka-btn:hover, .ka-tabs-style > .ka-content > ul > li > .ka-btn.ka-active {
+          background-color: #ffb116; }
       .ka-tabs-style > .ka-content > ul > li > .ka-des {
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.09); }

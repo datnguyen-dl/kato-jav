@@ -23,10 +23,7 @@ body {
   right: 0;
 }
 
-content,
-section {
-  display: block;
-}
+
 
 .section{
   position: relative;
@@ -61,7 +58,7 @@ content {
 }
 
 %w-small {
-  max-width: 960px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }

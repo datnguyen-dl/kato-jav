@@ -11,10 +11,63 @@
   background-size: cover;
 }
 
-.ka-facebook-icon{
+.ka-intro-japan-icon {
+  @extend %ka-icon;
+  background-image: url("../img/icons/white/intro_japan.png");
+}
+
+.ka-intro-employment-icon {
+  @extend %ka-icon;
+  background-image: url("../img/icons/white/intro_employment.png");
+}
+
+.ka-qualification-icon {
+  @extend %ka-icon;
+  background-image: url("../img/icons/white/qualification.png");
+}
+
+.ka-scholarship-icon {
+  @extend %ka-icon;
+  background-image: url("../img/icons/white/scholarship.png");
+}
+
+.ka-house-icon {
+  @extend %ka-icon;
+  background-image: url("../img/icons/white/house.png");
+}
+
+// color
+.ka-intro-japan-icon.ka-color {
+  @extend %ka-icon;
+  background-image: url("../img/icons/color/intro_japan.png");
+}
+
+.ka-intro-employment-icon.ka-color {
+  @extend %ka-icon;
+  background-image: url("../img/icons/color/intro_employment.png");
+}
+
+.ka-qualification-icon.ka-color {
+  @extend %ka-icon;
+  background-image: url("../img/icons/color/qualification.png");
+}
+
+.ka-scholarship-icon.ka-color {
+  @extend %ka-icon;
+  background-image: url("../img/icons/color/scholarship.png");
+}
+
+.ka-house-icon.ka-color {
+  @extend %ka-icon;
+  background-image: url("../img/icons/color/house.png");
+}
+
+.ka-facebook-icon {
+  @extend %ka-icon;
   background-image: url("../img/icons/color/facebook-icon.png");
 }
 
-.ka-twitter-icon{
+.ka-twitter-icon {
+  @extend %ka-icon;
   background-image: url("../img/icons/color/twitter-icon.png");
 }

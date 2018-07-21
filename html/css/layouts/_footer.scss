@@ -35,8 +35,7 @@ footer {
 %ka-contact-bar {
   @extend %ka-fC;
   padding: 60px 40px;
-  max-width: 1200px;
-  width: 100%;
+  @extend %w-small;
   margin: 0 auto;
   @media (max-width: 768px) {
     padding: 40px 20px;

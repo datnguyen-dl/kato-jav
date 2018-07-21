@@ -9,12 +9,14 @@
       color: $orange;
       text-decoration: none;
       align-items: center;
+      line-height: 1.4;
       span {
         padding: 10px 20px;
       }
       .lnr{
         font-size: 20px;
         font-weight: 600;
+        padding-right: 0;
       }
       &:hover{
         background-color: $orange;

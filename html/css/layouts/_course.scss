@@ -68,44 +68,58 @@
       &>li {
         @extend %ka-fC;
         @extend %ka-fWrap;
-        border-bottom: 1px solid $white7;
         padding: 20px 0;
-        &:last-child{
-          border: 0;
-        }
-        &>div {
+        &>.ka-btn {
           min-width: 200px;
           width: 20%;
-          @extend %ka-fC;
-          border-right: 1px solid $white7;
-          &:last-child{
-            border: 0;
+          padding: 10px;
+          @extend %ka-fC; // border-right: 1px solid $white7;
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          &:last-child {
+            &>.ka-content {
+              &:before {
+                display: none;
+              }
+            }
           }
-          .ka-btn {
+          &>.ka-content {
             display: block;
+            padding: 10px;
             width: 100%;
-            padding: 20px;
-            color: white;
-            text-decoration: none;
-            text-align: center;
+            position: relative;
             i {
-              display: inline-block;
-              width: 64px;
-              height: 64px;
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: cover;
+              width: 90px;
+              height: 90px;
             }
-            .ka-facebook-icon {
-              background-image: url(../img/icons/color/facebook-icon.png);
-            }
-            p{
+            p {
               margin: 0;
             }
-            &:hover,
-            &.ka-active {
-              background-color: $orange;
+            &:before {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              right: -10px;
+              width: 1px;
+              height: 100%;
+              background-color: $white7;
             }
+            &:after {
+              content: '';
+              display: none;
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background-color: $white7;
+            }
+          }
+          &:hover,
+          &.ka-active {
+            background-color: $orange;
           }
         }
         &>.ka-des {
