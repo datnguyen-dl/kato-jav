@@ -1,68 +1,12 @@
-.ks-slider-child {
-  .owl-carousel {
-    width: 100%;
-    z-index: 1;
-    height: 350px;
-    .owl-stage-outer {
-      height: 100%;
-      .owl-stage {
-        height: 100%;
-        .owl-item {
-          height: 100%;
-          background-color: #bebebe;
-          .item {
-            position: relative;
-            overflow: hidden;
-            @extend %ka-fOne;
-            @extend %ka-fC;
-            @extend %ka-fAI-center;
-            @extend %ka-fJC-center;
-            height: 100%;
-            img {
-              @extend %ka-pos-center;
-            }
-            h1 {
-              color: white;
-              @extend %ka-pos-center;
-              font-weight: 600;
-              text-transform: uppercase;
-            }
-          }
-        }
-      }
-    }
-    .owl-dots {
-      text-align: center;
-      .owl-dot {
-        margin: 0;
-        padding: 5px;
-        span {
-          display: block;
-          width: 10px;
-          height: 10px;
-          border: 1px solid $grey2;
-          border-radius: 10px;
-        }
-        &.active {
-          span {
-            border: 0;
-            background-color: $grey2;
-          }
-        }
-      }
-    }
-    .owl-nav {
-      display: none;
-    }
-  }
-}
-
 .ka-tabs-style {
   background-color: #212121;
   color: white;
   &>.ka-content {
     @extend %w-normal;
     padding: 60px 20px;
+    @media screen and (max-width: 512px) {
+      padding: 10px;
+    }
     &>ul {
       @extend %ka-ul;
       &>li {
@@ -73,7 +17,8 @@
           min-width: 200px;
           width: 20%;
           padding: 10px;
-          @extend %ka-fC; // border-right: 1px solid $white7;
+          @extend %ka-fC;
+          @extend %ka-fWrap;
           text-decoration: none;
           color: white;
           text-align: center;
@@ -120,6 +65,22 @@
           &:hover,
           &.ka-active {
             background-color: $orange;
+          }
+          @media screen and (max-width: 512px) {
+            min-width: auto;
+            width: 50%;
+            &:nth-child(even) {
+              &>.ka-content {
+                &:before {
+                  display: none;
+                }
+              }
+            }
+            &>.ka-content {
+              &::after {
+                display: block;
+              }
+            }
           }
         }
         &>.ka-des {

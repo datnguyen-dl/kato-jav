@@ -10,7 +10,7 @@
   z-index: 9;
   @media screen and (max-width: 512px) {
     top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
   div {
     min-height: 62px;
@@ -50,7 +50,7 @@
   margin-bottom: 200px;
   position: relative;
   @media screen and (max-width: 512px) {
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
   &>.ka-content {
     position: relative;
@@ -63,6 +63,10 @@
       text-align: center;
       background-color: white;
       padding: 40px;
+      @media screen and (max-width: 512px) {
+        padding:40px 20px;
+        padding-bottom: 60px;
+      }
       h1 {
         font-weight: bold;
         color: $blue;
@@ -132,8 +136,8 @@
     background-size: cover;
     color: white;
     @media screen and (max-width: 512px) {
-      padding: 20px 0;
-      padding-bottom: 40px;
+      padding: 40px 0;
+      padding-bottom: 60px;
     }
     .ka-text {
       position: relative;
@@ -265,7 +269,7 @@
   position: relative;
   margin-bottom: 200px;
   @media screen and (max-width: 512px) {
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
   &>.ka-content {
     position: relative;
@@ -334,11 +338,11 @@
       }
       .ka-say {
         position: relative;
-        background-color: $grey1;
+        background-color: rgba($color: #212121, $alpha: 0.95);
         padding: 100px 40px;
         @media screen and (max-width: 512px) {
-          padding:0 20px;
-          padding-bottom: 40px;
+          padding:40px 20px;
+          padding-bottom: 80px;
         }
         .ka-text {
           position: relative;
@@ -386,6 +390,9 @@
     @extend %w-desktop;
     background-color: white;
     padding-bottom: 80px;
+    @media screen and (max-width: 512px) {
+      padding-top: 40px;
+    }
     .ka-text {
       text-align: center;
       padding: 40px;

@@ -220,9 +220,13 @@ $size-icon6:12px;
 .ka-title-set {
   position: relative;
   padding: 15px 20px;
-  border-left: 3px solid $orange;
+  // border-left: 3px solid $orange;
+  box-shadow: inset 3px 0 0 $orange;
   @extend %ka-fC;
   @extend %ka-fAI-center;
+  @media screen and (max-width: 512px) {
+    padding: 15px 20px;
+  }
   i {
     position: relative;
     z-index: 1;
@@ -239,7 +243,7 @@ $size-icon6:12px;
     @extend %ka-fOne;
     h2 {
       margin: 0;
-      line-height: 28px;
+      line-height: 1.4;
       color: $blue;
       font-weight: bold;
     }
@@ -340,4 +344,8 @@ $size-icon6:12px;
   &:hover {
     background-color: $grey7;
   }
+}
+
+sub{
+  line-height: 1.4;
 }

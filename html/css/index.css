@@ -10,6 +10,15 @@ input[type="number"],
 input[type="password"],
 input[type="email"] {
   font-size: 1.15rem; }
+  @media screen and (max-width: 512px) {
+    body,
+    input,
+    textarea, button, input[type="text"],
+    input[type="search"],
+    input[type="number"],
+    input[type="password"],
+    input[type="email"] {
+      font-size: 1rem; } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -540,7 +549,7 @@ textarea, .ka-fsRob {
 .ka-avoidClick {
   pointer-events: none; }
 
-.ka-pos-center, .ka-title-slider, .ka-location > .ka-content .ka-image a h3, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item img, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item h1, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item img {
+.ka-pos-center, .ka-title-slider, .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img, .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item h1, .ka-location > .ka-content .ka-image a h3, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item img, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item img, .ka-local-page .ka-map img, .ka-local-info .ka-img img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -627,7 +636,10 @@ textarea, .ka-fsRob {
 .ka-title-set {
   position: relative;
   padding: 15px 20px;
-  border-left: 3px solid #ffb116; }
+  box-shadow: inset 3px 0 0 #ffb116; }
+  @media screen and (max-width: 512px) {
+    .ka-title-set {
+      padding: 15px 20px; } }
   .ka-title-set i {
     position: relative;
     z-index: 1;
@@ -641,7 +653,7 @@ textarea, .ka-fsRob {
     z-index: 1; }
     .ka-title-set div h2 {
       margin: 0;
-      line-height: 28px;
+      line-height: 1.4;
       color: #156eaa;
       font-weight: bold; }
     .ka-title-set div sub {
@@ -710,8 +722,11 @@ textarea, .ka-fsRob {
 .ka-hover-bg-dark:hover {
   background-color: rgba(0, 0, 0, 0.04); }
 
-.ka-title-set, .ka-link-btn, .ka-fC-mob, .ka-fC, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-fCol2-1, .ka-fCol1-2, .ka-fCol3-2, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, .ks-slider .owl-carousel .owl-dots, .ka-list-expand > li > a, .ka-tab-scroll > li > a, .ka-enrol, .ka-location > .ka-content .ka-image, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, nav, nav > .ka-menu, nav > .ka-menu > li > .ka-popup > .ka-content, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items > li, .ka-contact-bar, .ka-contact-bar a,
-.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-tabs-style > .ka-content > ul > li, .ka-tabs-style > .ka-content > ul > li > .ka-btn, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-local-page .ka-group-btn > .ka-content, .ka-tab-wrap .ka-tab-btn, .ka-local-info .ka-content, .ka-local-info .ka-content > div:nth-child(1) > ul {
+sub {
+  line-height: 1.4; }
+
+.ka-title-set, .ka-link-btn, .ka-fC-mob, .ka-fC, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-fCol2-1, .ka-fCol1-2, .ka-fCol3-2, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, .ks-slider .owl-carousel .owl-dots, .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-list-expand > li > a, .ka-tab-scroll > li > a, .ka-enrol, .ka-location > .ka-content .ka-image, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, nav, nav > .ka-menu, nav > .ka-menu > li > .ka-popup > .ka-content, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > .ka-list-child-items > li, .ka-contact-bar, .ka-contact-bar a,
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a, .ka-tabs-style > .ka-content > ul > li, .ka-tabs-style > .ka-content > ul > li > .ka-btn, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-local-page .ka-group-btn > .ka-content, .ka-tab-wrap .ka-tab-btn, .ka-local-info .ka-content, .ka-local-info .ka-content > div:nth-child(1) > ul {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -726,8 +741,8 @@ textarea, .ka-fsRob {
   .ka-fC-mob {
     display: block; } }
 
-.ka-fJC-center, .ka-contact-bar a,
-.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item {
+.ka-fJC-center, .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-contact-bar a,
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item {
   -moz-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center; }
@@ -786,13 +801,13 @@ textarea, .ka-fsRob {
   flex-wrap: nowrap;
   -ms-flex-wrap: none; }
 
-.ka-fWrap, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, nav > .ka-menu, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-bottom > .ka-content .ka-list-link, .ka-tabs-style > .ka-content > ul > li {
+.ka-fWrap, .ka-fCol2, .ka-fCol3, .ka-fCol4, .ka-letter > .ka-content .ka-list-letter .ka-letter-main .ka-address, nav > .ka-menu, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-bottom > .ka-content .ka-list-link, .ka-tabs-style > .ka-content > ul > li, .ka-tabs-style > .ka-content > ul > li > .ka-btn, .ka-local-info .ka-content > div:nth-child(1) > ul {
   -moz-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.ka-title-set div, .ka-fOne, .ka-fCol2-1 > .ka-col:nth-child(2), .ka-fCol1-2 > .ka-col:nth-child(1), .ka-orange-btn > div > div, .ka-white-btn > div > div, .ka-list-expand > li > a > div, .ka-enrol div:nth-child(1), .ka-location > .ka-content .ka-text, .ka-location > .ka-content .ka-image, .ka-location > .ka-content .ka-image a, .ka-letter > .ka-content .ka-list-letter > div, nav > .ka-logo, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-contact-bar a,
-.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a > div, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-local-page .ka-group-btn > .ka-content > .ka-item, .ka-tab-wrap .ka-tab-btn > li, .ka-local-info .ka-content > div:nth-child(1) > ul > li, .ka-local-info .ka-content > div:nth-child(2) {
+.ka-title-set div, .ka-fOne, .ka-fCol2-1 > .ka-col:nth-child(2), .ka-fCol1-2 > .ka-col:nth-child(1), .ka-orange-btn > div > div, .ka-white-btn > div > div, .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-list-expand > li > a > div, .ka-enrol div:nth-child(1), .ka-location > .ka-content .ka-text, .ka-location > .ka-content .ka-image, .ka-location > .ka-content .ka-image a, .ka-letter > .ka-content .ka-list-letter > div, nav > .ka-logo, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items, .ka-contact-bar a,
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-bottom > .ka-content .ka-list-link, .ka-bottom > .ka-content .ka-list-link > .ka-item a > div, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-local-page .ka-group-btn > .ka-content > .ka-item, .ka-tab-wrap .ka-tab-btn > li, .ka-local-info .ka-content > div:nth-child(1) > ul > li, .ka-local-info .ka-content > div:nth-child(2) {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex: 1;
@@ -822,14 +837,14 @@ textarea, .ka-fsRob {
   align-self: center;
   -ms-align-self: center; }
 
-.ka-title-set, .ka-fAI-center, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, .ka-list-expand > li > a, nav, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-tab-wrap .ka-tab-btn {
+.ka-title-set, .ka-fAI-center, .ka-scroll-btn, .ka-sound-btn, .ka-orange-btn > div, .ka-white-btn > div, .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-list-expand > li > a, nav, nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-tab-wrap .ka-tab-btn {
   -moz-align-items: center;
   -webkit-align-items: center;
   align-items: center;
   -ms-align-items: center; }
 
-.ka-fJC-center, .ka-contact-bar a,
-.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item {
+.ka-fJC-center, .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item, .ka-contact-bar a,
+.ka-contact-bar button, .ka-partner .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item, .ka-activity .owl-carousel-partner .owl-stage-outer .owl-stage .owl-item .item {
   -moz-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
@@ -898,7 +913,8 @@ button {
   color: white; }
   @media screen and (max-width: 512px) {
     .ka-scroll-btn {
-      left: 20px; } }
+      bottom: 20px;
+      left: 0; } }
   .ka-scroll-btn:before {
     content: '';
     display: block;
@@ -921,7 +937,8 @@ button {
   color: white; }
   @media screen and (max-width: 512px) {
     .ka-sound-btn {
-      right: 20px; } }
+      bottom: 20px;
+      right: 10px; } }
   .ka-sound-btn:after {
     content: '';
     display: block;
@@ -959,6 +976,9 @@ button {
     width: 100%; }
     .ka-big.ka-orange-btn > div > div, .ka-big.ka-white-btn > div > div {
       padding: 20px; }
+      @media screen and (max-width: 512px) {
+        .ka-big.ka-orange-btn > div > div, .ka-big.ka-white-btn > div > div {
+          padding: 10px 20px; } }
 
 .ka-orange-btn {
   color: #ffb116;
@@ -1125,6 +1145,9 @@ textarea {
       background-color: black;
       opacity: 0.1;
       z-index: 1; }
+      @media screen and (max-width: 512px) {
+        .ks-slider .ka-mask:after {
+          opacity: 0.3; } }
   .ks-slider .owl-carousel .owl-stage-outer .owl-stage .owl-item {
     height: 100vh;
     background-color: black; }
@@ -1133,7 +1156,15 @@ textarea {
       min-height: 100%; }
     .ks-slider .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
       position: relative;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
+      .ks-slider .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+        display: block;
+        height: 100%;
+        min-width: 100%; }
+        @media screen and (max-width: 512px) {
+          .ks-slider .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+            width: auto; } }
   .ks-slider .owl-carousel .owl-stage-outer .owl-stage .item-video {
     height: 100vh; }
   .ks-slider .owl-carousel .owl-dots {
@@ -1160,11 +1191,17 @@ textarea {
 .ka-title-slider {
   color: white;
   z-index: 9;
-  max-width: 512px; }
+  max-width: 640px;
+  width: 100%; }
   .ka-title-slider a {
     color: white; }
   .ka-title-slider > .ka-title {
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
+    @media screen and (max-width: 512px) {
+      .ka-title-slider > .ka-title {
+        padding-left: 20px;
+        padding-right: 20px; } }
     .ka-title-slider > .ka-title h1 {
       margin: 0;
       padding: 0;
@@ -1176,6 +1213,71 @@ textarea {
       padding-bottom: 20px;
       margin-bottom: 20px;
       border-bottom: 3px solid #ffb116; }
+      @media screen and (max-width: 512px) {
+        .ka-title-slider > .ka-title h1 {
+          font-size: 50px;
+          line-height: 1.2; } }
+
+.ka-slider-child .owl-carousel {
+  width: 100%;
+  z-index: 1;
+  height: 350px; }
+  @media screen and (max-width: 512px) {
+    .ka-slider-child .owl-carousel {
+      height: 200px; } }
+  .ka-slider-child .owl-carousel .owl-stage-outer {
+    height: 100%; }
+    .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage {
+      height: 100%; }
+      .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+        height: 100%;
+        background-color: #bebebe; }
+        .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+          position: relative;
+          overflow: hidden;
+          height: 100%;
+          text-align: center; }
+          .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+            display: block;
+            width: auto;
+            min-width: 100%; }
+            @media screen and (max-width: 512px) {
+              .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+                height: 100%; } }
+          .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item h1 {
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            z-index: 1; }
+            @media screen and (max-width: 512px) {
+              .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item h1 {
+                font-size: 30px;
+                line-height: 1.2; } }
+          .ka-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.3; }
+  .ka-slider-child .owl-carousel .owl-dots {
+    text-align: center; }
+    .ka-slider-child .owl-carousel .owl-dots .owl-dot {
+      margin: 0;
+      padding: 5px; }
+      .ka-slider-child .owl-carousel .owl-dots .owl-dot span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.65);
+        border-radius: 10px; }
+      .ka-slider-child .owl-carousel .owl-dots .owl-dot.active span {
+        border: 0;
+        background-color: rgba(0, 0, 0, 0.65); }
+  .ka-slider-child .owl-carousel .owl-nav {
+    display: none; }
 
 .ka-list-expand > li {
   display: block;
@@ -1257,7 +1359,7 @@ body {
   width: 48px;
   height: 100%;
   background-image: url("../img/pattern/bg_point_01.png");
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 9; }
   @media screen and (max-width: 512px) {
     .ka-pref,
@@ -1296,7 +1398,10 @@ content {
 .ka-breadcrumb {
   background-color: rgba(0, 0, 0, 0.02);
   padding: 10px 40px;
-  font-size: 14px; }
+  font-size: 12px; }
+  @media screen and (max-width: 512px) {
+    .ka-breadcrumb {
+      padding: 7px 10px; } }
   .ka-breadcrumb a {
     margin-right: 10px;
     text-decoration: none;
@@ -1318,7 +1423,7 @@ content {
   @media screen and (max-width: 512px) {
     .ka-enrol {
       top: 0;
-      margin-bottom: 80px; } }
+      margin-bottom: 0; } }
   .ka-enrol div {
     min-height: 62px;
     background-color: #ffb116; }
@@ -1350,7 +1455,7 @@ content {
   position: relative; }
   @media screen and (max-width: 512px) {
     .ka-location {
-      margin-bottom: 80px; } }
+      margin-bottom: 0; } }
   .ka-location > .ka-content {
     position: relative;
     z-index: 5; }
@@ -1361,6 +1466,10 @@ content {
       text-align: center;
       background-color: white;
       padding: 40px; }
+      @media screen and (max-width: 512px) {
+        .ka-location > .ka-content .ka-text {
+          padding: 40px 20px;
+          padding-bottom: 60px; } }
       .ka-location > .ka-content .ka-text h1 {
         font-weight: bold;
         color: #156eaa; }
@@ -1409,8 +1518,8 @@ content {
     color: white; }
     @media screen and (max-width: 512px) {
       .ka-course > .ka-content {
-        padding: 20px 0;
-        padding-bottom: 40px; } }
+        padding: 40px 0;
+        padding-bottom: 60px; } }
     .ka-course > .ka-content .ka-text {
       position: relative;
       max-width: 960px;
@@ -1503,7 +1612,7 @@ content {
   margin-bottom: 200px; }
   @media screen and (max-width: 512px) {
     .ka-voice {
-      margin-bottom: 80px; } }
+      margin-bottom: 0; } }
   .ka-voice > .ka-content {
     position: relative;
     z-index: 5; }
@@ -1559,12 +1668,12 @@ content {
           padding-right: 0; } }
       .ka-voice > .ka-content .ka-say-wrap .ka-say {
         position: relative;
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: rgba(33, 33, 33, 0.95);
         padding: 100px 40px; }
         @media screen and (max-width: 512px) {
           .ka-voice > .ka-content .ka-say-wrap .ka-say {
-            padding: 0 20px;
-            padding-bottom: 40px; } }
+            padding: 40px 20px;
+            padding-bottom: 80px; } }
         .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-text {
           position: relative;
           max-width: 960px;
@@ -1595,6 +1704,9 @@ content {
     z-index: 5;
     background-color: white;
     padding-bottom: 80px; }
+    @media screen and (max-width: 512px) {
+      .ka-letter > .ka-content {
+        padding-top: 40px; } }
     .ka-letter > .ka-content .ka-text {
       text-align: center;
       padding: 40px; }
@@ -1699,23 +1811,28 @@ nav {
     padding: 0 40px; }
     @media screen and (max-width: 512px) {
       nav > .ka-logo {
-        padding: 0 20px; } }
+        padding: 0 10px; } }
     nav > .ka-logo a {
       display: inline-block; }
       nav > .ka-logo a img {
         height: 40px; }
+        @media screen and (max-width: 512px) {
+          nav > .ka-logo a img {
+            height: 32px; } }
     @media screen and (max-width: 512px) {
       nav > .ka-logo .img-logo {
         display: none; } }
-    @media screen and (max-width: 512px) {
-      nav > .ka-logo .img-logo-mob {
-        display: blokc; } }
+    nav > .ka-logo .img-logo-mob {
+      display: none; }
+      @media screen and (max-width: 512px) {
+        nav > .ka-logo .img-logo-mob {
+          display: block; } }
   nav > .ka-menu > li {
     padding: 15px 10px;
     padding-right: 20px; }
     @media screen and (max-width: 512px) {
       nav > .ka-menu > li {
-        padding-right: 10px; } }
+        padding: 7px 0; } }
     nav > .ka-menu > li > a {
       padding-top: 5px;
       padding-bottom: 5px;
@@ -1727,7 +1844,7 @@ nav {
     nav > .ka-menu > li > .ka-popup {
       display: none;
       position: fixed;
-      top: 67px;
+      top: 70px;
       right: 0;
       bottom: 0;
       left: 0;
@@ -1735,6 +1852,9 @@ nav {
       height: 95vh;
       padding-bottom: 60px;
       z-index: 999; }
+      @media screen and (max-width: 512px) {
+        nav > .ka-menu > li > .ka-popup {
+          top: 52px; } }
       nav > .ka-menu > li > .ka-popup > .ka-content {
         overflow-y: auto;
         height: 100%;
@@ -1794,18 +1914,20 @@ nav {
   @media screen and (max-width: 512px) {
     nav > .ka-menu .ka-language-btn {
       display: none; } }
-  nav > .ka-menu .ka-language-mob-btn.ka-piece > a {
-    color: white !important; }
-  @media screen and (max-width: 512px) {
-    nav > .ka-menu .ka-language-mob-btn {
-      display: block; } }
+  nav > .ka-menu .ka-language-mob-btn {
+    padding-top: 40px !important; }
+    nav > .ka-menu .ka-language-mob-btn.ka-piece > a {
+      color: white !important; }
+    @media screen and (max-width: 512px) {
+      nav > .ka-menu .ka-language-mob-btn {
+        display: block; } }
   @media screen and (max-width: 512px) {
     nav > .ka-menu .ka-contact-btn {
       width: 100%; } }
   nav a {
     color: white;
     text-decoration: none; }
-  nav:hover, nav.ka-active {
+  nav:hover, nav.ka-active, nav.ka-fit {
     background-color: #ffb116; }
 
 footer {
@@ -1989,47 +2111,14 @@ footer {
         .ka-bottom > .ka-content .ka-social > a:hover {
           opacity: 0.7; }
 
-.ks-slider-child .owl-carousel {
-  width: 100%;
-  z-index: 1;
-  height: 350px; }
-  .ks-slider-child .owl-carousel .owl-stage-outer {
-    height: 100%; }
-    .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage {
-      height: 100%; }
-      .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item {
-        height: 100%;
-        background-color: #bebebe; }
-        .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
-          position: relative;
-          overflow: hidden;
-          height: 100%; }
-          .ks-slider-child .owl-carousel .owl-stage-outer .owl-stage .owl-item .item h1 {
-            color: white;
-            font-weight: 600;
-            text-transform: uppercase; }
-  .ks-slider-child .owl-carousel .owl-dots {
-    text-align: center; }
-    .ks-slider-child .owl-carousel .owl-dots .owl-dot {
-      margin: 0;
-      padding: 5px; }
-      .ks-slider-child .owl-carousel .owl-dots .owl-dot span {
-        display: block;
-        width: 10px;
-        height: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.65);
-        border-radius: 10px; }
-      .ks-slider-child .owl-carousel .owl-dots .owl-dot.active span {
-        border: 0;
-        background-color: rgba(0, 0, 0, 0.65); }
-  .ks-slider-child .owl-carousel .owl-nav {
-    display: none; }
-
 .ka-tabs-style {
   background-color: #212121;
   color: white; }
   .ka-tabs-style > .ka-content {
     padding: 60px 20px; }
+    @media screen and (max-width: 512px) {
+      .ka-tabs-style > .ka-content {
+        padding: 10px; } }
     .ka-tabs-style > .ka-content > ul > li {
       padding: 20px 0; }
       .ka-tabs-style > .ka-content > ul > li > .ka-btn {
@@ -2071,6 +2160,14 @@ footer {
             background-color: rgba(255, 255, 255, 0.09); }
         .ka-tabs-style > .ka-content > ul > li > .ka-btn:hover, .ka-tabs-style > .ka-content > ul > li > .ka-btn.ka-active {
           background-color: #ffb116; }
+        @media screen and (max-width: 512px) {
+          .ka-tabs-style > .ka-content > ul > li > .ka-btn {
+            min-width: auto;
+            width: 50%; }
+            .ka-tabs-style > .ka-content > ul > li > .ka-btn:nth-child(even) > .ka-content:before {
+              display: none; }
+            .ka-tabs-style > .ka-content > ul > li > .ka-btn > .ka-content::after {
+              display: block; } }
       .ka-tabs-style > .ka-content > ul > li > .ka-des {
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.09); }
@@ -2116,22 +2213,37 @@ footer {
       display: none; }
 
 .ka-local-page .ka-map {
+  position: relative;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 50vh;
+  display: block; }
   .ka-local-page .ka-map img {
-    display: block; }
+    display: block;
+    min-width: 100%;
+    height: 100%; }
 .ka-local-page .ka-group-btn {
   position: relative;
+  background-color: #212121;
   background-image: url(../img/bg/bg-support.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
+  @media screen and (max-width: 512px) {
+    .ka-local-page .ka-group-btn {
+      background-image: none; } }
   .ka-local-page .ka-group-btn > .ka-content {
     padding: 40px; }
+    @media screen and (max-width: 512px) {
+      .ka-local-page .ka-group-btn > .ka-content {
+        display: block;
+        padding: 10px; } }
     .ka-local-page .ka-group-btn > .ka-content > .ka-item {
-      text-align: center;
-      padding: 40px; }
+      text-align: center; }
+      @media screen and (max-width: 512px) {
+        .ka-local-page .ka-group-btn > .ka-content > .ka-item {
+          padding: 10px; } }
       .ka-local-page .ka-group-btn > .ka-content > .ka-item > div {
         padding: 40px 20px;
         background-color: #ffb116; }
@@ -2143,38 +2255,53 @@ footer {
         .ka-local-page .ka-group-btn > .ka-content > .ka-item > div:hover {
           background-color: #f08000; }
 
-.ka-tab-wrap .ka-tab-btn {
-  border: 2px solid #ffb116; }
-  .ka-tab-wrap .ka-tab-btn > li {
-    text-align: center; }
-    .ka-tab-wrap .ka-tab-btn > li > a {
-      display: block;
-      color: #ffb116;
-      padding: 20px;
-      text-decoration: none;
-      font-weight: bold; }
-    .ka-tab-wrap .ka-tab-btn > li:hover > a {
-      color: #f89604; }
-    .ka-tab-wrap .ka-tab-btn > li.ka-active {
-      background-color: #ffb116; }
-      .ka-tab-wrap .ka-tab-btn > li.ka-active > a {
-        color: white; }
+.ka-tab-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px; }
+  .ka-tab-wrap .ka-tab-btn {
+    border: 2px solid #ffb116; }
+    .ka-tab-wrap .ka-tab-btn > li {
+      text-align: center; }
+      .ka-tab-wrap .ka-tab-btn > li > a {
+        display: block;
+        color: #ffb116;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: bold; }
+        @media screen and (max-width: 512px) {
+          .ka-tab-wrap .ka-tab-btn > li > a {
+            padding: 10px 10px; } }
+      .ka-tab-wrap .ka-tab-btn > li:hover > a {
+        color: #f89604; }
+      .ka-tab-wrap .ka-tab-btn > li.ka-active {
+        background-color: #ffb116; }
+        .ka-tab-wrap .ka-tab-btn > li.ka-active > a {
+          color: white; }
 
 .ka-local-info .ka-img {
+  position: relative;
   width: 100%;
   height: 80vh;
   overflow: hidden; }
   .ka-local-info .ka-img img {
     display: block;
-    width: 100%; }
+    min-width: 100%;
+    height: 100%; }
 .ka-local-info .ka-content {
   position: relative;
   margin-top: -15vh;
   background-color: white;
   z-index: 1; }
+  @media screen and (max-width: 512px) {
+    .ka-local-info .ka-content {
+      display: block; } }
   .ka-local-info .ka-content > div {
     padding: 40px;
     padding-bottom: 60px; }
+    @media screen and (max-width: 512px) {
+      .ka-local-info .ka-content > div {
+        padding: 20px; } }
     .ka-local-info .ka-content > div:nth-child(1) {
       border-right: 1px solid rgba(0, 0, 0, 0.09); }
       .ka-local-info .ka-content > div:nth-child(1) > h1 {
@@ -2184,7 +2311,9 @@ footer {
       .ka-local-info .ka-content > div:nth-child(1) p {
         margin-bottom: 60px; }
       .ka-local-info .ka-content > div:nth-child(1) > ul > li {
-        text-align: center; }
+        min-width: 120px;
+        text-align: center;
+        margin-bottom: 20px; }
         .ka-local-info .ka-content > div:nth-child(1) > ul > li i {
           display: inline-block;
           width: 64px;
@@ -2324,6 +2453,9 @@ footer {
 
 .ka-p40 {
   padding: 40px; }
+  @media screen and (max-width: 512px) {
+    .ka-p40 {
+      padding: 20px; } }
 
 .ka-p50 {
   padding: 50px; }
@@ -2710,5 +2842,17 @@ $largeScreen: ~"only screen  and (min-width : 1824px)";
 @media $desktop {}
 
 @media $largeScreen {}*/
+@media screen and (max-width: 512px) {
+  .ka-p0-mob {
+    padding: 0px; }
+
+  .ka-p20-mob {
+    padding: 20px; }
+
+  .ka-pL0-mob {
+    padding-left: 0px; }
+
+  .ka-pR0-mob {
+    padding-right: 0px; } }
 
 /*# sourceMappingURL=index.css.map */

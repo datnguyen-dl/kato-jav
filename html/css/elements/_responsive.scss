@@ -1,5 +1,6 @@
 /*$mobile: ~"only screen and (min-device-width : 320px) and (max-device-width : 480px)";
 $ipads: ~"only screen and (min-device-width : 768px) and (max-device-width : 1024px)";*/
+
 /*$mobile: ~"only screen and (min-width : 240px) and (max-width : 511px)";
 $tabletx2: ~"only screen and (min-width : 512px) and (max-width : 599px)";
 $tabletx1: ~"only screen and (min-width : 600px) and (max-width : 859px)";
@@ -17,3 +18,18 @@ $largeScreen: ~"only screen  and (min-width : 1824px)";
 @media $desktop {}
 
 @media $largeScreen {}*/
+
+@media screen and (max-width: 512px) {
+  .ka-p0-mob {
+    padding: 0px;
+  }
+  .ka-p20-mob {
+    padding: 20px;
+  }
+  .ka-pL0-mob {
+    padding-left: 0px;
+  }
+  .ka-pR0-mob {
+    padding-right: 0px;
+  }
+}

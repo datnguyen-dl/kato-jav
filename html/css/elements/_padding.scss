@@ -1,4 +1,3 @@
-
 //PADDING============================
 .ka-p0 {
   padding: 0px;
@@ -34,6 +33,9 @@
 
 .ka-p40 {
   padding: 40px;
+  @media screen and (max-width: 512px) {
+    padding: 20px;
+  }
 }
 
 .ka-p50 {

@@ -1,26 +1,42 @@
 .ka-local-page {
   .ka-map {
+    position: relative;
     width: 100%;
     overflow: hidden;
+    height: 50vh;
+    display: block;
     img {
+      @extend %ka-pos-center;
       display: block;
+      min-width: 100%;
+      height: 100%;
     }
   }
   .ka-group-btn {
     position: relative;
+    background-color: #212121;
     background-image: url(../img/bg/bg-support.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    @media screen and (max-width: 512px) {
+      background-image: none;
+    }
     &>.ka-content {
       @extend %w-normal;
       @extend %ka-fC;
       padding: 40px;
+      @media screen and (max-width: 512px) {
+        display: block;
+        padding: 10px;
+      }
       &>.ka-item {
         @extend %ka-fOne;
         text-align: center;
-        padding: 40px;
+        @media screen and (max-width: 512px) {
+          padding: 10px;
+        }
         &>div {
           padding: 40px 20px;
           background-color: $orange; // border: 2px solid transparent;
@@ -40,6 +56,9 @@
 }
 
 .ka-tab-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
   .ka-tab-btn {
     @extend %ka-fC;
     @extend %ka-fAI-center;
@@ -54,6 +73,9 @@
         padding: 20px;
         text-decoration: none;
         font-weight: bold;
+        @media screen and (max-width: 512px) {
+          padding: 10px 10px;
+        }
       }
       &:hover {
         &>a {
@@ -72,12 +94,15 @@
 
 .ka-local-info {
   .ka-img {
+    position: relative;
     width: 100%;
     height: 80vh;
     overflow: hidden;
     img {
+      @extend %ka-pos-center;
       display: block;
-      width: 100%;
+      min-width: 100%;
+      height: 100%;
     }
   }
   .ka-content {
@@ -87,9 +112,15 @@
     background-color: white;
     z-index: 1;
     @extend %ka-fC;
+    @media screen and (max-width: 512px) {
+      display: block;
+    }
     &>div {
       padding: 40px;
       padding-bottom: 60px;
+      @media screen and (max-width: 512px) {
+        padding: 20px;
+      }
       &:nth-child(1) {
         @extend %ka-fTwo;
         border-right: 1px solid $grey6;
@@ -104,9 +135,12 @@
         &>ul {
           @extend %ka-ul;
           @extend %ka-fC;
+          @extend %ka-fWrap;
           &>li {
             @extend %ka-fOne;
+            min-width: 120px;
             text-align: center;
+            margin-bottom: 20px;
             i {
               display: inline-block;
               width: 64px;

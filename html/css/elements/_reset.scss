@@ -1,6 +1,9 @@
 %fontGeneral {
   font-size: 1.15rem;
   @extend %ka-fRegular;
+  @media screen and (max-width: 512px) {
+    font-size: 1rem;
+  }
 }
 
 $colorMain: #333;

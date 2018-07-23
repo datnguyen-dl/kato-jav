@@ -1,5 +1,8 @@
 //IE・Edge対応
 $(function () {
+  if (document.body.offsetWidth <= 640) {
+    return;
+  }
   objectFitImages('img.ImgObj');
 });
 
@@ -21,7 +24,7 @@ $(function () {
  */
 
 (function (root, factory) {
-  if (document.body.offsetWidth <= 512) {
+  if (document.body.offsetWidth <= 640) {
     return;
   }
   'use strict';
@@ -37,7 +40,9 @@ $(function () {
     root.luxy = factory();
   }
 }(this, (function () {
-
+  if (document.body.offsetWidth <= 640) {
+    return;
+  }
   'use strict';
 
   var defaults = {

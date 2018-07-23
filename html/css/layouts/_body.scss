@@ -11,7 +11,7 @@ body {
   width: 48px;
   height: 100%;
   background-image: url("../img/pattern/bg_point_01.png");
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 9;
   @media screen and (max-width: 512px) {
     display: none;
@@ -73,7 +73,10 @@ content {
 .ka-breadcrumb {
   background-color: $grey8;
   padding: 10px 40px;
-  font-size: 14px;
+  font-size: 12px;
+  @media screen and (max-width: 512px) {
+    padding: 7px 10px;
+  }
   a {
     margin-right: 10px;
     text-decoration: none;

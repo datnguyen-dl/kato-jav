@@ -71,3 +71,20 @@ $('a[href*="#"]')
       }
     }
   });
+
+// shiw menu when scroll
+function openScrollMenu() {
+  var bSlider = document.querySelectorAll(".ks-slider")[0].getBoundingClientRect().bottom;
+  console.log("AAAA", bSlider);
+  if (bSlider <= 0 ) {
+    document.querySelectorAll("nav")[0].classList.add("ka-active");
+  }else{
+    document.querySelectorAll("nav")[0].classList.remove("ka-active");
+  }
+
+}
+
+
+
+window.addEventListener("DOMContentLoaded", openScrollMenu);
+window.addEventListener("scroll", openScrollMenu);

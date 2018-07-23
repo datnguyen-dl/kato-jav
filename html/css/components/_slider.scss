@@ -34,6 +34,9 @@ $heightSlider:100vh;
       background-color: black;
       opacity: 0.1;
       z-index: 1;
+      @media screen and (max-width: 512px) {
+        opacity: 0.3;
+      }
     }
   }
   .owl-carousel {
@@ -49,6 +52,17 @@ $heightSlider:100vh;
           .item {
             position: relative;
             height: 100%;
+            width: 100%;
+            img {
+              // @extend %ka-pos-center;
+              display: block;
+              height: 100%;
+              min-width: 100%;
+              @media screen and (max-width: 512px) {
+                // min-width: auto;
+                width: auto;
+              }
+            }
           }
         }
         .item-video {
@@ -57,28 +71,28 @@ $heightSlider:100vh;
       }
     }
     $dot-size-slider:10px;
-    .owl-dots{
+    .owl-dots {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       z-index: 99;
-      width:$dot-size-slider;
+      width: $dot-size-slider;
       right: 60px;
       @extend %ka-fC;
       @extend %ka-fCol;
       @media screen and (max-width: 512px) {
         display: none;
       }
-      .owl-dot{
+      .owl-dot {
         width: $dot-size-slider;
         height: $dot-size-slider;
         margin-bottom: 10px;
         border-radius: 20px;
         border: 1px solid white;
-        &.active{
+        &.active {
           background-color: white;
         }
-        &:focus{
+        &:focus {
           outline: none;
         }
       }
@@ -89,14 +103,19 @@ $heightSlider:100vh;
 .ka-title-slider {
   @extend %ka-pos-center;
   color: white;
-  z-index: 9;
-  // margin-top: -30px;
-  max-width: 512px;
+  z-index: 9; // margin-top: -30px;
+  max-width: 640px;
+  width: 100%;
   a {
     color: white;
   }
   &>.ka-title {
     text-align: center;
+    width: 100%;
+    @media screen and (max-width: 512px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     h1 {
       margin: 0;
       padding: 0;
@@ -108,7 +127,94 @@ $heightSlider:100vh;
       padding-bottom: 20px;
       margin-bottom: 20px;
       border-bottom: 3px solid $orange;
+      @media screen and (max-width: 512px) {
+        font-size: 50px;
+        line-height: 1.2;
+      }
     }
   }
 }
 
+.ka-slider-child {
+  .owl-carousel {
+    width: 100%;
+    z-index: 1;
+    height: 350px;
+    @media screen and (max-width: 512px) {
+      height: 200px;
+    }
+    .owl-stage-outer {
+      height: 100%;
+      .owl-stage {
+        height: 100%;
+        .owl-item {
+          height: 100%;
+          background-color: #bebebe;
+          .item {
+            position: relative;
+            overflow: hidden;
+            @extend %ka-fOne;
+            @extend %ka-fC;
+            @extend %ka-fAI-center;
+            @extend %ka-fJC-center;
+            height: 100%;
+            text-align: center;
+            img {
+              @extend %ka-pos-center;
+              display: block;
+              width: auto;
+              min-width: 100%;
+              @media screen and (max-width: 512px) {
+                height: 100%;
+              }
+            }
+            h1 {
+              color: white;
+              @extend %ka-pos-center;
+              font-weight: 600;
+              text-transform: uppercase;
+              z-index: 1;
+              @media screen and (max-width: 512px) {
+                font-size: 30px;
+                line-height: 1.2;
+              }
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: black;
+              opacity: 0.3;
+            }
+          }
+        }
+      }
+    }
+    .owl-dots {
+      text-align: center;
+      .owl-dot {
+        margin: 0;
+        padding: 5px;
+        span {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border: 1px solid $grey2;
+          border-radius: 10px;
+        }
+        &.active {
+          span {
+            border: 0;
+            background-color: $grey2;
+          }
+        }
+      }
+    }
+    .owl-nav {
+      display: none;
+    }
+  }
+}
