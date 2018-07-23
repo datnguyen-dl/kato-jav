@@ -66,6 +66,9 @@ $heightSlider:100vh;
       right: 60px;
       @extend %ka-fC;
       @extend %ka-fCol;
+      @media screen and (max-width: 512px) {
+        display: none;
+      }
       .owl-dot{
         width: $dot-size-slider;
         height: $dot-size-slider;
@@ -88,7 +91,7 @@ $heightSlider:100vh;
   color: white;
   z-index: 9;
   // margin-top: -30px;
-  max-width: 640px;
+  max-width: 512px;
   a {
     color: white;
   }

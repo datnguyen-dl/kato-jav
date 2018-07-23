@@ -164,8 +164,14 @@ footer {
       @media (max-width: 768px) {
         padding: 20px;
       }
+      @media (max-width: 512px) {
+        text-align: center;
+      }
       a {
         display: block;
+        @media (max-width: 512px) {
+          display: inline-block;
+        }
         img {
           height: 100px;
         }
@@ -181,6 +187,9 @@ footer {
         width: 33.33%;
         @media (max-width: 1024px) {
           width: 50%;
+        }
+        @media screen and (max-width: 512px) {
+          width: 100%;
         }
         a {
           @extend %ka-fC;
@@ -213,10 +222,16 @@ footer {
     }
     .ka-social {
       padding: 20px;
+      @media screen and (max-width: 512px) {
+        text-align: center;
+      }
       &>a {
         padding: 10px 20px;
         display: block;
         text-transform: none;
+        @media screen and (max-width: 512px) {
+          display: inline-block;
+        }
         cursor: pointer;
         i {
           display: block;

@@ -9,8 +9,8 @@ button {
   }
 }
 
-.ka-link{
-  color:$orange;
+.ka-link {
+  color: $orange;
 }
 
 .ka-scroll-btn {
@@ -23,6 +23,10 @@ button {
   font-weight: 200;
   font-size: 14px;
   color: white;
+  @media screen and (max-width: 512px) {
+    // bottom: 20px;
+    left: 20px;
+  }
   &:before {
     content: '';
     display: block;
@@ -48,6 +52,10 @@ button {
   font-weight: 200;
   font-size: 14px;
   color: white;
+  @media screen and (max-width: 512px) {
+    // bottom: 20px;
+    right: 20px;
+  }
   &:after {
     content: '';
     display: block;
@@ -81,7 +89,8 @@ button {
       @extend %ka-fOne;
       text-align: left;
     }
-    span,i {
+    span,
+    i {
       padding: 15px 20px;
       display: block;
       font-size: 20px;
@@ -89,7 +98,7 @@ button {
     }
   }
   &.ka-big {
-    max-width: 400px;
+    max-width: 340px;
     width: 100%;
     &>div {
       &>div {

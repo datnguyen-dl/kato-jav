@@ -15,10 +15,23 @@ nav {
   &>.ka-logo {
     @extend %ka-fOne;
     padding: 0 40px;
+    @media screen and (max-width: 512px) {
+      padding: 0 20px;
+    }
     a {
       display: inline-block;
       img {
         height: 40px;
+      }
+    }
+    .img-logo {
+      @media screen and (max-width: 512px) {
+        display: none;
+      }
+    }
+    .img-logo-mob {
+      @media screen and (max-width: 512px) {
+        display: blokc;
       }
     }
   }
@@ -28,6 +41,9 @@ nav {
     &>li {
       padding: 15px 10px; // min-height: 65px;
       padding-right: 20px;
+      @media screen and (max-width: 512px) {
+        padding-right: 10px;
+      }
       &>a {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -55,6 +71,10 @@ nav {
           height: 100%;
           padding: 20px;
           background-color: #212121;
+          @media screen and (max-width: 512px) {
+            padding: 0;
+            display: block;
+          }
           .ka-list-items {
             @extend %ka-fC;
             @extend %ka-fOne;
@@ -66,6 +86,9 @@ nav {
               margin-bottom: 10px;
               &>.ka-piece {
                 padding: 20px;
+                @media screen and (max-width: 512px) {
+                  padding: 10px 20px;
+                }
                 &>a {
                   @extend %ka-fC;
                   @extend %ka-fAI-center;
@@ -137,6 +160,26 @@ nav {
     }
     .ka-br {
       border: 1px solid white;
+    }
+    .ka-language-btn {
+      @media screen and (max-width: 512px) {
+        display: none;
+      }
+    }
+    .ka-language-mob-btn {
+      &.ka-piece {
+        &>a {
+          color: white !important;
+        }
+      }
+      @media screen and (max-width: 512px) {
+        display: block;
+      }
+    }
+    .ka-contact-btn{
+      @media screen and (max-width: 512px) {
+        width: 100%;
+      }
     }
   }
   ul {

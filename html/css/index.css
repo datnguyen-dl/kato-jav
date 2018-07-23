@@ -896,6 +896,9 @@ button {
   font-weight: 200;
   font-size: 14px;
   color: white; }
+  @media screen and (max-width: 512px) {
+    .ka-scroll-btn {
+      left: 20px; } }
   .ka-scroll-btn:before {
     content: '';
     display: block;
@@ -916,6 +919,9 @@ button {
   font-weight: 200;
   font-size: 14px;
   color: white; }
+  @media screen and (max-width: 512px) {
+    .ka-sound-btn {
+      right: 20px; } }
   .ka-sound-btn:after {
     content: '';
     display: block;
@@ -941,13 +947,15 @@ button {
   .ka-orange-btn > div > div, .ka-white-btn > div > div {
     padding: 15px 20px;
     text-align: left; }
-  .ka-orange-btn > div span, .ka-white-btn > div span, .ka-orange-btn > div i, .ka-white-btn > div i {
+  .ka-orange-btn > div span, .ka-white-btn > div span,
+  .ka-orange-btn > div i,
+  .ka-white-btn > div i {
     padding: 15px 20px;
     display: block;
     font-size: 20px;
     font-weight: 600; }
   .ka-big.ka-orange-btn, .ka-big.ka-white-btn {
-    max-width: 400px;
+    max-width: 340px;
     width: 100%; }
     .ka-big.ka-orange-btn > div > div, .ka-big.ka-white-btn > div > div {
       padding: 20px; }
@@ -1135,6 +1143,9 @@ textarea {
     z-index: 99;
     width: 10px;
     right: 60px; }
+    @media screen and (max-width: 512px) {
+      .ks-slider .owl-carousel .owl-dots {
+        display: none; } }
     .ks-slider .owl-carousel .owl-dots .owl-dot {
       width: 10px;
       height: 10px;
@@ -1149,7 +1160,7 @@ textarea {
 .ka-title-slider {
   color: white;
   z-index: 9;
-  max-width: 640px; }
+  max-width: 512px; }
   .ka-title-slider a {
     color: white; }
   .ka-title-slider > .ka-title {
@@ -1248,6 +1259,10 @@ body {
   background-image: url("../img/pattern/bg_point_01.png");
   opacity: 0.5;
   z-index: 9; }
+  @media screen and (max-width: 512px) {
+    .ka-pref,
+    .ka-suf {
+      display: none; } }
 
 .ka-pref {
   left: 0; }
@@ -1300,11 +1315,18 @@ content {
   color: white;
   margin-bottom: 150px;
   z-index: 9; }
+  @media screen and (max-width: 512px) {
+    .ka-enrol {
+      top: 0;
+      margin-bottom: 80px; } }
   .ka-enrol div {
     min-height: 62px;
     background-color: #ffb116; }
     .ka-enrol div:nth-child(1) {
       padding: 25px 40px; }
+      @media screen and (max-width: 512px) {
+        .ka-enrol div:nth-child(1) {
+          display: none; } }
     .ka-enrol div:nth-child(2) button {
       background-color: #f89604;
       padding: 25px 40px;
@@ -1313,15 +1335,28 @@ content {
       font-size: 16px;
       min-height: 62px;
       height: 100%; }
+      @media screen and (max-width: 512px) {
+        .ka-enrol div:nth-child(2) button {
+          width: 100%; } }
       .ka-enrol div:nth-child(2) button:hover {
         background-color: #ffc44e; }
+    @media screen and (max-width: 512px) {
+      .ka-enrol div:nth-child(2) {
+        width: 100%;
+        margin: 0 auto; } }
 
 .ka-location {
   margin-bottom: 200px;
   position: relative; }
+  @media screen and (max-width: 512px) {
+    .ka-location {
+      margin-bottom: 80px; } }
   .ka-location > .ka-content {
     position: relative;
     z-index: 5; }
+    @media screen and (max-width: 512px) {
+      .ka-location > .ka-content {
+        display: block; } }
     .ka-location > .ka-content .ka-text {
       text-align: center;
       background-color: white;
@@ -1349,6 +1384,9 @@ content {
         top: 30px; }
       .ka-location > .ka-content .ka-image a:nth-child(3) {
         top: -30px; }
+      @media screen and (max-width: 512px) {
+        .ka-location > .ka-content .ka-image a:nth-child(1), .ka-location > .ka-content .ka-image a:nth-child(2), .ka-location > .ka-content .ka-image a:nth-child(3) {
+          top: 0; } }
       .ka-location > .ka-content .ka-image a:hover {
         opacity: 0.7; }
 
@@ -1356,6 +1394,10 @@ content {
   margin-bottom: 200px;
   padding-left: 1vw;
   position: relative; }
+  @media screen and (max-width: 512px) {
+    .ka-course {
+      padding: 0;
+      margin-bottom: 0; } }
   .ka-course > .ka-content {
     position: relative;
     z-index: 5;
@@ -1365,6 +1407,10 @@ content {
     background-position: center;
     background-size: cover;
     color: white; }
+    @media screen and (max-width: 512px) {
+      .ka-course > .ka-content {
+        padding: 20px 0;
+        padding-bottom: 40px; } }
     .ka-course > .ka-content .ka-text {
       position: relative;
       max-width: 960px;
@@ -1374,6 +1420,10 @@ content {
       padding: 80px;
       padding-bottom: 100px;
       left: -60px; }
+      @media screen and (max-width: 512px) {
+        .ka-course > .ka-content .ka-text {
+          padding: 20px;
+          left: 0; } }
       .ka-course > .ka-content .ka-text h1 {
         font-weight: bold; }
       .ka-course > .ka-content .ka-text sub {
@@ -1381,10 +1431,18 @@ content {
         font-weight: 400; }
       .ka-course > .ka-content .ka-text p {
         line-height: 30px; }
+      @media screen and (max-width: 512px) {
+        .ka-course > .ka-content .ka-text {
+          padding: 20px; }
+          .ka-course > .ka-content .ka-text sub {
+            line-height: 1.4; } }
 
 .ka-support {
   position: relative;
   margin-bottom: 20px; }
+  @media screen and (max-width: 512px) {
+    .ka-support {
+      margin-bottom: 80px; } }
   .ka-support > .ka-content {
     position: relative;
     z-index: 5; }
@@ -1405,6 +1463,11 @@ content {
         font-weight: 400; }
       .ka-support > .ka-content .ka-text p {
         line-height: 30px; }
+      @media screen and (max-width: 512px) {
+        .ka-support > .ka-content .ka-text {
+          padding: 20px; }
+          .ka-support > .ka-content .ka-text sub {
+            line-height: 1.4; } }
     .ka-support > .ka-content .ka-box-wrap {
       position: relative;
       z-index: 2; }
@@ -1428,10 +1491,19 @@ content {
         height: 100%;
         background-color: #ffb116;
         opacity: 0.2; }
+  @media screen and (max-width: 512px) {
+    .ka-support .ka-col {
+      padding: 20px; } }
+  @media screen and (max-width: 512px) {
+    .ka-support .ka-col > .ka-content {
+      padding: 20px; } }
 
 .ka-voice {
   position: relative;
   margin-bottom: 200px; }
+  @media screen and (max-width: 512px) {
+    .ka-voice {
+      margin-bottom: 80px; } }
   .ka-voice > .ka-content {
     position: relative;
     z-index: 5; }
@@ -1439,6 +1511,9 @@ content {
       position: relative;
       padding-right: 15vw;
       z-index: 1; }
+      @media screen and (max-width: 512px) {
+        .ka-voice > .ka-content .ka-talk-wrap {
+          padding-right: 0; } }
       .ka-voice > .ka-content .ka-talk-wrap > div {
         position: relative; }
         .ka-voice > .ka-content .ka-talk-wrap > div .ka-image {
@@ -1465,14 +1540,31 @@ content {
             content: '';
             display: block;
             clear: both; }
+          @media screen and (max-width: 512px) {
+            .ka-voice > .ka-content .ka-talk-wrap > div .ka-talk {
+              position: relative;
+              top: 0;
+              right: 0;
+              max-width: 100%;
+              background-color: white; }
+              .ka-voice > .ka-content .ka-talk-wrap > div .ka-talk div h2 {
+                line-height: 1.4; } }
     .ka-voice > .ka-content .ka-say-wrap {
       position: relative;
       padding-right: 15%;
       margin-top: -60px; }
+      @media screen and (max-width: 512px) {
+        .ka-voice > .ka-content .ka-say-wrap {
+          margin-top: 0;
+          padding-right: 0; } }
       .ka-voice > .ka-content .ka-say-wrap .ka-say {
         position: relative;
         background-color: rgba(0, 0, 0, 0.85);
         padding: 100px 40px; }
+        @media screen and (max-width: 512px) {
+          .ka-voice > .ka-content .ka-say-wrap .ka-say {
+            padding: 0 20px;
+            padding-bottom: 40px; } }
         .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-text {
           position: relative;
           max-width: 960px;
@@ -1490,6 +1582,11 @@ content {
             font-weight: 400; }
           .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-text p {
             line-height: 30px; }
+          @media screen and (max-width: 512px) {
+            .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-text {
+              padding: 20px 0; }
+              .ka-voice > .ka-content .ka-say-wrap .ka-say .ka-text sub {
+                line-height: 1.4; } }
 
 .ka-letter {
   position: relative; }
@@ -1510,11 +1607,23 @@ content {
         color: #156eaa; }
       .ka-letter > .ka-content .ka-text p {
         line-height: 30px; }
+      @media screen and (max-width: 512px) {
+        .ka-letter > .ka-content .ka-text {
+          padding: 20px 0; }
+          .ka-letter > .ka-content .ka-text sub {
+            line-height: 1.4; } }
     .ka-letter > .ka-content .ka-list-letter > div {
       padding: 20px; }
+      @media screen and (max-width: 512px) {
+        .ka-letter > .ka-content .ka-list-letter > div {
+          padding: 0; } }
     .ka-letter > .ka-content .ka-list-letter .ka-letter-main {
       display: block;
       padding: 20px; }
+      @media screen and (max-width: 512px) {
+        .ka-letter > .ka-content .ka-list-letter .ka-letter-main {
+          padding: 0;
+          margin-bottom: 40px; } }
       .ka-letter > .ka-content .ka-list-letter .ka-letter-main figure {
         display: block;
         padding: 0;
@@ -1558,6 +1667,22 @@ content {
       padding: 10px; }
       .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item:hover {
         background-color: rgba(0, 0, 0, 0.09); }
+      @media screen and (max-width: 512px) {
+        .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item {
+          padding: 0; } }
+      @media screen and (max-width: 512px) {
+        .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item .ka-col {
+          padding: 0; } }
+      @media screen and (max-width: 512px) {
+        .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item .ka-col .ka-img-wrap {
+          margin-bottom: 20px; } }
+      @media screen and (max-width: 512px) {
+        .ka-letter > .ka-content .ka-list-letter .ka-letter-child .ka-item {
+          margin-bottom: 40px; } }
+
+@media screen and (max-width: 512px) {
+  #luxy {
+    overflow: hidden; } }
 
 header {
   position: relative;
@@ -1572,13 +1697,25 @@ nav {
   z-index: 99; }
   nav > .ka-logo {
     padding: 0 40px; }
+    @media screen and (max-width: 512px) {
+      nav > .ka-logo {
+        padding: 0 20px; } }
     nav > .ka-logo a {
       display: inline-block; }
       nav > .ka-logo a img {
         height: 40px; }
+    @media screen and (max-width: 512px) {
+      nav > .ka-logo .img-logo {
+        display: none; } }
+    @media screen and (max-width: 512px) {
+      nav > .ka-logo .img-logo-mob {
+        display: blokc; } }
   nav > .ka-menu > li {
     padding: 15px 10px;
     padding-right: 20px; }
+    @media screen and (max-width: 512px) {
+      nav > .ka-menu > li {
+        padding-right: 10px; } }
     nav > .ka-menu > li > a {
       padding-top: 5px;
       padding-bottom: 5px;
@@ -1603,10 +1740,17 @@ nav {
         height: 100%;
         padding: 20px;
         background-color: #212121; }
+        @media screen and (max-width: 512px) {
+          nav > .ka-menu > li > .ka-popup > .ka-content {
+            padding: 0;
+            display: block; } }
         nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li {
           margin-bottom: 10px; }
           nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece {
             padding: 20px; }
+            @media screen and (max-width: 512px) {
+              nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece {
+                padding: 10px 20px; } }
             nav > .ka-menu > li > .ka-popup > .ka-content .ka-list-items > li > .ka-piece > a {
               color: #ffb116;
               font-weight: 400; }
@@ -1647,6 +1791,17 @@ nav {
     clear: both; }
   nav > .ka-menu .ka-br {
     border: 1px solid white; }
+  @media screen and (max-width: 512px) {
+    nav > .ka-menu .ka-language-btn {
+      display: none; } }
+  nav > .ka-menu .ka-language-mob-btn.ka-piece > a {
+    color: white !important; }
+  @media screen and (max-width: 512px) {
+    nav > .ka-menu .ka-language-mob-btn {
+      display: block; } }
+  @media screen and (max-width: 512px) {
+    nav > .ka-menu .ka-contact-btn {
+      width: 100%; } }
   nav a {
     color: white;
     text-decoration: none; }
@@ -1768,8 +1923,14 @@ footer {
       @media (max-width: 768px) {
         .ka-bottom > .ka-content .ka-logo-footer {
           padding: 20px; } }
+      @media (max-width: 512px) {
+        .ka-bottom > .ka-content .ka-logo-footer {
+          text-align: center; } }
       .ka-bottom > .ka-content .ka-logo-footer a {
         display: block; }
+        @media (max-width: 512px) {
+          .ka-bottom > .ka-content .ka-logo-footer a {
+            display: inline-block; } }
         .ka-bottom > .ka-content .ka-logo-footer a img {
           height: 100px; }
     .ka-bottom > .ka-content .ka-list-link > .ka-item {
@@ -1778,6 +1939,9 @@ footer {
       @media (max-width: 1024px) {
         .ka-bottom > .ka-content .ka-list-link > .ka-item {
           width: 50%; } }
+      @media screen and (max-width: 512px) {
+        .ka-bottom > .ka-content .ka-list-link > .ka-item {
+          width: 100%; } }
       .ka-bottom > .ka-content .ka-list-link > .ka-item a {
         padding: 15px 30px;
         text-transform: none;
@@ -1800,11 +1964,17 @@ footer {
           background-color: #ffb116; }
     .ka-bottom > .ka-content .ka-social {
       padding: 20px; }
+      @media screen and (max-width: 512px) {
+        .ka-bottom > .ka-content .ka-social {
+          text-align: center; } }
       .ka-bottom > .ka-content .ka-social > a {
         padding: 10px 20px;
         display: block;
         text-transform: none;
         cursor: pointer; }
+        @media screen and (max-width: 512px) {
+          .ka-bottom > .ka-content .ka-social > a {
+            display: inline-block; } }
         .ka-bottom > .ka-content .ka-social > a i {
           display: block;
           width: 24px;
@@ -2074,9 +2244,22 @@ footer {
   width: 100%;
   height: 100%;
   opacity: 0.5; }
-  .ka-bg-ani .ka-bg1, .ka-bg-ani .ka-bg2, .ka-bg-ani .ka-bg3, .ka-bg-ani .ka-bg4, .ka-bg-ani .ka-bg5, .ka-bg-ani .ka-bg6 {
+  @media screen and (max-width: 512px) {
+    .ka-bg-ani {
+      display: none; } }
+  .ka-bg-ani .ka-bg1,
+  .ka-bg-ani .ka-bg2,
+  .ka-bg-ani .ka-bg3,
+  .ka-bg-ani .ka-bg4,
+  .ka-bg-ani .ka-bg5,
+  .ka-bg-ani .ka-bg6 {
     position: absolute; }
-    .ka-bg-ani .ka-bg1 img, .ka-bg-ani .ka-bg2 img, .ka-bg-ani .ka-bg3 img, .ka-bg-ani .ka-bg4 img, .ka-bg-ani .ka-bg5 img, .ka-bg-ani .ka-bg6 img {
+    .ka-bg-ani .ka-bg1 img,
+    .ka-bg-ani .ka-bg2 img,
+    .ka-bg-ani .ka-bg3 img,
+    .ka-bg-ani .ka-bg4 img,
+    .ka-bg-ani .ka-bg5 img,
+    .ka-bg-ani .ka-bg6 img {
       display: block; }
   .ka-bg-ani .ka-bg1 {
     top: -10vw;

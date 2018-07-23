@@ -8,12 +8,19 @@
   color: white;
   margin-bottom: 150px;
   z-index: 9;
+  @media screen and (max-width: 512px) {
+    top: 0;
+    margin-bottom: 80px;
+  }
   div {
     min-height: 62px;
     background-color: $orange;
     &:nth-child(1) {
       padding: 25px 40px;
       @extend %ka-fOne;
+      @media screen and (max-width: 512px) {
+        display: none;
+      }
     }
     &:nth-child(2) {
       button {
@@ -24,9 +31,16 @@
         font-size: 16px;
         min-height: 62px;
         height: 100%;
+        @media screen and (max-width: 512px) {
+          width: 100%;
+        }
         &:hover {
           background-color: $orange-l;
         }
+      }
+      @media screen and (max-width: 512px) {
+        width: 100%;
+        margin: 0 auto;
       }
     }
   }
@@ -35,9 +49,15 @@
 .ka-location {
   margin-bottom: 200px;
   position: relative;
+  @media screen and (max-width: 512px) {
+    margin-bottom: 80px;
+  }
   &>.ka-content {
     position: relative;
     z-index: 5;
+    @media screen and (max-width: 512px) {
+      display: block;
+    }
     .ka-text {
       @extend %ka-fOne;
       text-align: center;
@@ -73,12 +93,18 @@
           display: block;
           width: 100%;
         }
-        &:nth-child(1) {}
         &:nth-child(2) {
           top: 30px;
         }
         &:nth-child(3) {
           top: -30px;
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          @media screen and (max-width: 512px) {
+            top: 0;
+          }
         }
         &:hover {
           opacity: 0.7;
@@ -92,6 +118,10 @@
   margin-bottom: 200px;
   padding-left: 1vw;
   position: relative;
+  @media screen and (max-width: 512px) {
+    padding: 0;
+    margin-bottom: 0;
+  }
   &>.ka-content {
     position: relative;
     z-index: 5;
@@ -101,6 +131,10 @@
     background-position: center;
     background-size: cover;
     color: white;
+    @media screen and (max-width: 512px) {
+      padding: 20px 0;
+      padding-bottom: 40px;
+    }
     .ka-text {
       position: relative;
       max-width: 960px;
@@ -110,6 +144,10 @@
       padding: 80px;
       padding-bottom: 100px;
       left: -60px;
+      @media screen and (max-width: 512px) {
+        padding: 20px;
+        left: 0;
+      }
       h1 {
         font-weight: bold;
       }
@@ -120,6 +158,12 @@
       p {
         line-height: 30px;
       }
+      @media screen and (max-width: 512px) {
+        padding: 20px;
+        sub {
+          line-height: 1.4;
+        }
+      }
     }
   }
 }
@@ -127,6 +171,9 @@
 .ka-support {
   position: relative;
   margin-bottom: 20px;
+  @media screen and (max-width: 512px) {
+    margin-bottom: 80px;
+  }
   &>.ka-content {
     position: relative;
     z-index: 5;
@@ -149,6 +196,12 @@
       }
       p {
         line-height: 30px;
+      }
+      @media screen and (max-width: 512px) {
+        padding: 20px;
+        sub {
+          line-height: 1.4;
+        }
       }
     }
     .ka-box-wrap {
@@ -196,11 +249,24 @@
       }
     }
   }
+  .ka-col {
+    @media screen and (max-width: 512px) {
+      padding: 20px;
+    }
+    &>.ka-content {
+      @media screen and (max-width: 512px) {
+        padding: 20px;
+      }
+    }
+  }
 }
 
 .ka-voice {
   position: relative;
   margin-bottom: 200px;
+  @media screen and (max-width: 512px) {
+    margin-bottom: 80px;
+  }
   &>.ka-content {
     position: relative;
     z-index: 5;
@@ -208,6 +274,9 @@
       position: relative; // padding-left: 10vw;
       padding-right: 15vw;
       z-index: 1;
+      @media screen and (max-width: 512px) {
+        padding-right: 0;
+      }
       &>div {
         position: relative;
         .ka-image {
@@ -240,6 +309,18 @@
               clear: both;
             }
           }
+          @media screen and (max-width: 512px) {
+            position: relative;
+            top: 0;
+            right: 0;
+            max-width: 100%;
+            background-color: white;
+            div {
+              h2 {
+                line-height: 1.4;
+              }
+            }
+          }
         }
       }
     }
@@ -247,10 +328,18 @@
       position: relative;
       padding-right: 15%;
       margin-top: -60px;
+      @media screen and (max-width: 512px) {
+        margin-top: 0;
+        padding-right: 0;
+      }
       .ka-say {
         position: relative;
         background-color: $grey1;
-        padding: 100px 40px; // padding-top: 200px;
+        padding: 100px 40px;
+        @media screen and (max-width: 512px) {
+          padding:0 20px;
+          padding-bottom: 40px;
+        }
         .ka-text {
           position: relative;
           max-width: 960px;
@@ -271,6 +360,12 @@
           p {
             line-height: 30px;
           }
+          @media screen and (max-width: 512px) {
+            padding: 20px 0;
+            sub {
+              line-height: 1.4;
+            }
+          }
         } // .ka-group-btn {
         //   @extend %ka-fC;
         //   justify-content: center;
@@ -284,8 +379,7 @@
 }
 
 .ka-letter {
-  position: relative;
-  // margin-bottom: 60px;
+  position: relative; // margin-bottom: 60px;
   &>.ka-content {
     position: relative;
     z-index: 5;
@@ -307,6 +401,12 @@
       p {
         line-height: 30px;
       }
+      @media screen and (max-width: 512px) {
+        padding: 20px 0;
+        sub {
+          line-height: 1.4;
+        }
+      }
     }
     .ka-list-letter {
       // @extend %ka-fC;
@@ -314,10 +414,17 @@
       &>div {
         @extend %ka-fOne;
         padding: 20px;
+        @media screen and (max-width: 512px) {
+          padding: 0;
+        }
       }
       .ka-letter-main {
         display: block;
         padding: 20px;
+        @media screen and (max-width: 512px) {
+          padding: 0;
+          margin-bottom: 40px;
+        }
         figure {
           display: block;
           padding: 0;
@@ -378,8 +485,30 @@
           &:hover {
             background-color: $grey6;
           }
+          @media screen and (max-width: 512px) {
+            padding: 0;
+          }
+          .ka-col{
+            @media screen and (max-width: 512px) {
+              padding: 0;
+            }
+            .ka-img-wrap{
+              @media screen and (max-width: 512px) {
+                margin-bottom: 20px;
+              }
+            }
+          }
+          @media screen and (max-width: 512px) {
+            margin-bottom: 40px;
+          }
         }
       }
     }
+  }
+}
+
+#luxy{
+  @media screen and (max-width: 512px) {
+    overflow: hidden;
   }
 }
