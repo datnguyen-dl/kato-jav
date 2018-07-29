@@ -39,7 +39,7 @@
         }
         &>div {
           padding: 40px 20px;
-          background-color: $orange; // border: 2px solid transparent;
+          background-color: $orange;
           &>span {
             display: block;
             font-size: 72px;
@@ -47,7 +47,7 @@
             color: white;
           }
           &:hover {
-            background-color: $orange-dd; // border: 2px solid $orange;
+            background-color: $orange-dd;
           }
         }
       }
